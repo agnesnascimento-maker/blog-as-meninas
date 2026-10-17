@@ -11,6 +11,12 @@ body {
     padding: 20px 10px;
 }
 
+/* Limite máximo para imagens não estourarem no telemóvel */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 /* Cabeçalho */
 .cabecalho {
     max-width: 900px;
@@ -133,6 +139,21 @@ body {
     margin-bottom: 8px;
 }
 
+/* Bloco Bege Fixo para o Resumo da Personagem (Sem botão retrátil) */
+.bloco-resumo {
+    background-color: #e8dfd1;
+    padding: 10px;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.bloco-resumo p {
+    font-size: 0.8rem;
+    line-height: 1.4;
+    color: #333;
+    margin: 0;
+}
+
 /* Rodapé */
 .rodape-materia {
     margin-top: 30px;
@@ -162,9 +183,10 @@ body {
     border-radius: 12px;
 }
 
-/* Ajuste simples para telemóvel */
+/* Ajuste para telemóveis */
 @media (max-width: 600px) {
     .grade-personagens {
         flex-direction: column;
     }
 }
+
