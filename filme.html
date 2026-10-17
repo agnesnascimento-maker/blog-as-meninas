@@ -1,166 +1,50 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Jornal das Letras — O Filme</title>
-
+    <title>Jornal das Letras - O Filme</title>
     <link rel="stylesheet" href="style.css">
-
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,800;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
-    <div class="folha-jornal">
+    <header class="cabecalho">
+        <div class="subtitulo-topo">
+            <span>CADERNO DE CINEMA E LITERATURA</span>
+            <span>PÁGINA 4</span>
+        </div>
+        <h1 class="titulo-jornal">Jornal das Letras</h1>
+        <hr class="linha-jornal">
+        <nav class="menu-navegacao">
+            <a href="index.html">1. O LIVRO</a>
+            <a href="personagens.html">2. PERSONAGENS</a>
+            <a href="autora.html">3. A AUTORA</a>
+            <a href="filme.html" class="ativo">4. O FILME</a>
+            <a href="critica.html">5. A CRÍTICA</a>
+            <a href="resumo.html">6. RESUMO</a>
+        </nav>
+        <hr class="linha-jornal">
+    </header>
 
-        <header class="cabecalho-jornal">
+    <main class="conteudo">
+        <div class="dossie-tag">LITERATURA NAS TELAS • ADAPTAÇÃO CINEMATOGRÁFICA</div>
+        <h2 class="titulo-materia">AS MENINAS NO CINEMA (1995)</h2>
+        <p class="subtitulo-materia">O romance de Lygia Fagundes Telles também chegou às telas, levando ao cinema os conflitos pessoais e sociais das protagonistas.</p>
 
-            <div class="info-topo">
-                <span>CADERNO DE CINEMA E LITERATURA</span>
-                <span>PÁGINA 4</span>
+        <p>O romance <em>As Meninas</em>, publicado em 1973, ganhou uma adaptação cinematográfica lançada em 1995, dirigida por Emiliano Ribeiro. A história acompanha Lorena, Lia e Ana Clara, três jovens que vivem em um pensionato durante a ditadura militar brasileira.</p>
+        <p>Cada personagem possui uma história, uma personalidade e uma maneira diferente de enxergar o mundo. Lorena vive seus conflitos pessoais, Lia se envolve com a resistência política e Ana Clara enfrenta dificuldades relacionadas à sua vida e ao seu passado.</p>
+
+        <img src="fotos/filme.jpg" alt="Cartaz do filme As Meninas">
+
+        <footer class="rodape-materia">
+            <hr class="linha-jornal">
+            <p class="rodape-texto">JORNAL DAS LETRAS • CADERNO DE CINEMA E LITERATURA</p>
+            <div class="botoes-navegacao">
+                <a href="autora.html" class="btn-nav">‹ PÁGINA 3: A AUTORA</a>
+                <a href="critica.html" class="btn-nav">PÁGINA 5: A CRÍTICA ›</a>
             </div>
-
-            <h1 class="titulo-jornal">Jornal das Letras</h1>
-
-            <div class="linha-dupla"></div>
-
-            <nav class="menu-jornal">
-                <a href="index.html" class="btn-jornal">1. O LIVRO</a>
-                <a href="personagens.html" class="btn-jornal">2. PERSONAGENS</a>
-                <a href="autora.html" class="btn-jornal">3. A AUTORA</a>
-                <a href="filme.html" class="btn-jornal ativo">4. O FILME</a>
-                <a href="critica.html" class="btn-jornal">5. A CRÍTICA</a>
-                <a href="resumo.html" class="btn-jornal">6. RESUMO</a>
-            </nav>
-
-            <div class="linha-simples"></div>
-
-        </header>
-
-        <main class="seccao-cinema">
-
-            <span class="subtag-noticia">
-                LITERATURA NAS TELAS • ADAPTAÇÃO CINEMATOGRÁFICA
-            </span>
-
-            <h2 class="manchete-principal">
-                AS MENINAS NO CINEMA (1995)
-            </h2>
-
-            <h3 class="submanchete">
-                O romance de Lygia Fagundes Telles também chegou às telas,
-                levando ao cinema os conflitos pessoais e sociais das protagonistas.
-            </h3>
-
-            <div class="conteudo-cinema">
-
-                <div class="texto-cinema">
-
-                    <p class="primeira-letra">
-                        <strong>O</strong> romance <em>As Meninas</em>, publicado
-                        em 1973, ganhou uma adaptação cinematográfica lançada
-                        em 1995, dirigida por Emiliano Ribeiro. A história
-                        acompanha Lorena, Lia e Ana Clara, três jovens que
-                        vivem em um pensionato durante a ditadura militar
-                        brasileira.
-                    </p>
-
-                    <p>
-                        Cada personagem possui uma história, uma personalidade
-                        e uma maneira diferente de enxergar o mundo. Lorena
-                        vive seus conflitos pessoais, Lia se envolve com a
-                        resistência política e Ana Clara enfrenta dificuldades
-                        relacionadas à sua vida e ao seu passado.
-                    </p>
-
-                    <p>
-                        A adaptação leva para o cinema temas importantes
-                        presentes no livro, como a amizade, as desigualdades
-                        sociais, a liberdade e os efeitos da repressão política.
-                        Dessa forma, o filme permite que o público conheça
-                        a história por meio da linguagem cinematográfica.
-                    </p>
-
-                </div>
-
-            </div>
-
-        </main>
-
-        <div class="linha-divisoria"></div>
-
-        <section class="seccao-trailer-principal">
-
-            <h4 class="titulo-seccao">
-                EXIBIÇÃO ESPECIAL: AS MENINAS
-            </h4>
-
-            <div class="caixa-trailer-destaque">
-
-                <a
-                    href="https://youtu.be/Msbn6Vmy028"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="Abrir vídeo de As Meninas no YouTube"
-                >
-
-                    <img
-                        src="https://img.youtube.com/vi/Msbn6Vmy028/hqdefault.jpg"
-                        alt="Miniatura do vídeo de As Meninas no YouTube"
-                        style="width: 100%; border-radius: 6px; display: block;"
-                        loading="lazy"
-                    >
-
-                </a>
-
-                <span class="legenda-foto">
-                    VÍDEO — Miniatura do conteúdo relacionado à adaptação
-                    cinematográfica de As Meninas.
-                </span>
-
-                <div style="margin-top: 15px; text-align: center;">
-
-                    <a
-                        href="https://youtu.be/Msbn6Vmy028"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="btn-antigo"
-                        style="text-decoration: none; display: inline-block; font-size: 14px; padding: 12px 24px;"
-                    >
-                        ▶ Assistir no YouTube
-                    </a>
-
-                </div>
-
-            </div>
-
-        </section>
-
-        <footer class="rodape-jornal">
-
-            <div class="linha-simples"></div>
-
-            <p>JORNAL DAS LETRAS • CADERNO DE CINEMA E LITERATURA</p>
-
-            <div class="caixa-navegacao-pagina">
-
-                <a href="autora.html" class="btn-pagina-anterior">
-                    ← PÁGINA 3: A AUTORA
-                </a>
-
-                <a href="critica.html" class="btn-proxima-pagina">
-                    PÁGINA 5: A CRÍTICA →
-                </a>
-
-            </div>
-
         </footer>
-
-    </div>
+    </main>
 
 </body>
-
 </html>
