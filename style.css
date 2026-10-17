@@ -91,7 +91,7 @@ body {
     margin-bottom: 25px;
 }
 
-/* Grade dos Cartões de Personagens */
+/* Grade das Personagens */
 .grade-personagens {
     display: flex;
     gap: 15px;
@@ -130,21 +130,7 @@ body {
     font-size: 0.82rem;
     line-height: 1.4;
     color: #333;
-}
-
-/* Bloco de Resumo Fixo (Sem botão retrátil) */
-.bloco-resumo {
-    background-color: #e8dfd1;
-    padding: 12px;
-    border-radius: 4px;
-    margin-top: 12px;
-}
-
-.bloco-resumo p {
-    font-size: 0.8rem;
-    line-height: 1.4;
-    color: #333;
-    margin: 0;
+    margin-bottom: 8px;
 }
 
 /* Rodapé */
@@ -176,10 +162,9 @@ body {
     border-radius: 12px;
 }
 
-/* Ajuste Responsivo para Telemóveis */
+/* Ajuste simples para telemóvel */
 @media (max-width: 600px) {
     .grade-personagens {
         flex-direction: column;
     }
 }
-
