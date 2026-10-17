@@ -11,17 +11,19 @@ body {
     padding: 20px 10px;
 }
 
-/* Regra global para NENHUMA imagem estourar ou desformatar */
+/* Garante que NENHUMA imagem estoure na tela */
 img {
     max-width: 100%;
     height: auto;
+    display: block;
 }
 
-/* Estrutura Centralizada Padrão do Jornal */
+/* Estrutura centralizada do jornal para TODAS as páginas */
 .cabecalho,
 .conteudo,
 .rodape-materia,
-footer {
+footer,
+main {
     max-width: 900px;
     margin: 0 auto;
 }
@@ -55,7 +57,6 @@ footer {
     margin: 6px 0;
 }
 
-/* Menu de Navegação Superior */
 .menu-navegacao {
     display: flex;
     justify-content: space-around;
@@ -78,7 +79,7 @@ footer {
     border-radius: 12px;
 }
 
-/* Títulos e Subtítulos das Matérias */
+/* Títulos das matérias em todas as páginas */
 .dossie-tag {
     font-size: 0.7rem;
     color: #7a2818;
@@ -101,7 +102,7 @@ footer {
     margin-bottom: 25px;
 }
 
-/* Texto Geral do Jornal */
+/* Parágrafos gerais de notícias/resumos */
 p {
     font-size: 0.9rem;
     line-height: 1.6;
@@ -109,7 +110,7 @@ p {
     margin-bottom: 12px;
 }
 
-/* Grade e Cartões (Padrão da Página de Personagens) */
+/* Grade das Personagens */
 .grade-personagens {
     display: flex;
     gap: 15px;
@@ -151,7 +152,7 @@ p {
     margin-bottom: 8px;
 }
 
-/* Caixinha Bege de Resumo Fixo (Sem botão de clicar) */
+/* Caixinha bege fixa para o resumo das personagens */
 .bloco-resumo {
     background-color: #e8dfd1;
     padding: 10px;
@@ -166,7 +167,7 @@ p {
     margin: 0;
 }
 
-/* Rodapé e Botões de Navegação Inferiores */
+/* Rodapé */
 .rodape-materia {
     margin-top: 30px;
 }
@@ -195,10 +196,9 @@ p {
     border-radius: 12px;
 }
 
-/* Ajuste Responsivo para Telemóveis */
+/* Responsividade para celular */
 @media (max-width: 600px) {
     .grade-personagens {
         flex-direction: column;
     }
 }
-
