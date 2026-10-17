@@ -11,16 +11,24 @@ body {
     padding: 20px 10px;
 }
 
-/* Limite máximo para imagens não estourarem no telemóvel */
+/* Regra global para NENHUMA imagem estourar ou desformatar */
 img {
     max-width: 100%;
     height: auto;
 }
 
+/* Estrutura Centralizada Padrão do Jornal */
+.cabecalho,
+.conteudo,
+.rodape-materia,
+footer {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
 /* Cabeçalho */
 .cabecalho {
-    max-width: 900px;
-    margin: 0 auto 20px auto;
+    margin-bottom: 20px;
     text-align: center;
 }
 
@@ -47,6 +55,7 @@ img {
     margin: 6px 0;
 }
 
+/* Menu de Navegação Superior */
 .menu-navegacao {
     display: flex;
     justify-content: space-around;
@@ -69,12 +78,7 @@ img {
     border-radius: 12px;
 }
 
-/* Conteúdo Principal */
-.conteudo {
-    max-width: 900px;
-    margin: 0 auto;
-}
-
+/* Títulos e Subtítulos das Matérias */
 .dossie-tag {
     font-size: 0.7rem;
     color: #7a2818;
@@ -97,7 +101,15 @@ img {
     margin-bottom: 25px;
 }
 
-/* Grade das Personagens */
+/* Texto Geral do Jornal */
+p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 12px;
+}
+
+/* Grade e Cartões (Padrão da Página de Personagens) */
 .grade-personagens {
     display: flex;
     gap: 15px;
@@ -139,7 +151,7 @@ img {
     margin-bottom: 8px;
 }
 
-/* Bloco Bege Fixo para o Resumo da Personagem (Sem botão retrátil) */
+/* Caixinha Bege de Resumo Fixo (Sem botão de clicar) */
 .bloco-resumo {
     background-color: #e8dfd1;
     padding: 10px;
@@ -154,7 +166,7 @@ img {
     margin: 0;
 }
 
-/* Rodapé */
+/* Rodapé e Botões de Navegação Inferiores */
 .rodape-materia {
     margin-top: 30px;
 }
@@ -183,7 +195,7 @@ img {
     border-radius: 12px;
 }
 
-/* Ajuste para telemóveis */
+/* Ajuste Responsivo para Telemóveis */
 @media (max-width: 600px) {
     .grade-personagens {
         flex-direction: column;
