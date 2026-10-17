@@ -63,7 +63,7 @@ body {
     border-radius: 12px;
 }
 
-/* Conteúdo */
+/* Conteúdo Principal */
 .conteudo {
     max-width: 900px;
     margin: 0 auto;
@@ -91,7 +91,7 @@ body {
     margin-bottom: 25px;
 }
 
-/* Grade de Personagens */
+/* Grade dos Cartões de Personagens */
 .grade-personagens {
     display: flex;
     gap: 15px;
@@ -135,7 +135,7 @@ body {
 /* Bloco de Resumo Fixo (Sem botão retrátil) */
 .bloco-resumo {
     background-color: #e8dfd1;
-    padding: 10px;
+    padding: 12px;
     border-radius: 4px;
     margin-top: 12px;
 }
@@ -176,9 +176,10 @@ body {
     border-radius: 12px;
 }
 
-/* Responsividade para telemóveis */
+/* Ajuste Responsivo para Telemóveis */
 @media (max-width: 600px) {
     .grade-personagens {
         flex-direction: column;
     }
 }
+
