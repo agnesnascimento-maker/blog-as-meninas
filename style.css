@@ -1,3 +1,6 @@
+/* Importação de fontes modernas de estilo jornal clássico do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,400&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -5,58 +8,65 @@
 }
 
 body {
-    background-color: #fbf8f3;
-    color: #2c2c2c;
-    font-family: 'Georgia', serif;
-    padding: 20px 12px;
-    line-height: 1.6;
+    background-color: #fcf9f2;
+    color: #262626;
+    font-family: 'Merriweather', 'Georgia', serif;
+    font-weight: 300;
+    padding: 22px 14px;
+    line-height: 1.75;
+    -webkit-font-smoothing: antialiased;
 }
 
-/* Imagens com borda simples estilo foto de jornal */
+/* Imagens no estilo fotografia de jornal */
 img {
     max-width: 100%;
     height: auto;
     display: block;
-    margin: 15px auto;
-    border: 1px solid #d3c7b5;
+    margin: 18px auto;
+    border: 1px solid #dcd3c1;
     border-radius: 2px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
 }
 
-/* Container central das páginas */
+/* Container centralizado */
 .cabecalho,
 .conteudo,
 .rodape-materia,
 header,
 main,
 footer {
-    max-width: 850px;
+    max-width: 860px;
     margin: 0 auto;
 }
 
 /* Cabeçalho do Jornal */
 .cabecalho, header {
-    margin-bottom: 20px;
+    margin-bottom: 22px;
     text-align: center;
 }
 
 .subtitulo-topo {
     display: flex;
     justify-content: space-between;
-    font-size: 0.72rem;
-    font-weight: bold;
-    letter-spacing: 1px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
     margin-bottom: 6px;
     color: #555555;
     text-transform: uppercase;
+    font-family: system-ui, -apple-system, sans-serif;
 }
 
+/* Título principal mais moderno e marcante */
 .titulo-jornal, h1 {
-    font-size: 2.8rem;
-    font-family: 'Times New Roman', serif;
-    font-weight: bold;
+    font-size: 3rem;
+    font-family: 'Playfair Display', 'Times New Roman', serif;
+    font-weight: 900;
+    letter-spacing: -0.5px;
     margin: 8px 0;
     text-align: center;
-    color: #1a1a1a;
+    color: #121212;
+    text-transform: uppercase;
 }
 
 .linha-jornal, hr {
@@ -65,11 +75,11 @@ footer {
     margin: 6px 0;
 }
 
-/* Menu de Navegação */
+/* Menu de Navegação Superior */
 .menu-navegacao, nav {
     display: flex;
     justify-content: center;
-    gap: 8px;
+    gap: 6px;
     flex-wrap: wrap;
     padding: 8px 0;
 }
@@ -77,15 +87,17 @@ footer {
 .menu-navegacao a, nav a {
     text-decoration: none;
     color: #222222;
-    font-size: 0.75rem;
-    font-weight: bold;
-    padding: 5px 10px;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    padding: 5px 11px;
     border-radius: 12px;
-    transition: background 0.2s;
+    transition: all 0.2s ease;
+    font-family: system-ui, -apple-system, sans-serif;
 }
 
 .menu-navegacao a:hover, nav a:hover {
-    background-color: #eee4d5;
+    background-color: #eee4d3;
 }
 
 .menu-navegacao a.ativo, nav a.ativo {
@@ -93,116 +105,123 @@ footer {
     color: #ffffff;
 }
 
-/* Títulos e Conteúdo */
+/* Títulos das Matérias */
 .dossie-tag {
-    font-size: 0.72rem;
+    font-size: 0.7rem;
     color: #7a2818;
-    font-weight: bold;
-    letter-spacing: 1px;
-    margin-top: 16px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    margin-top: 18px;
     text-transform: uppercase;
+    font-family: system-ui, -apple-system, sans-serif;
 }
 
 .titulo-materia, h2 {
-    font-size: 1.8rem;
-    font-family: 'Times New Roman', serif;
-    font-weight: bold;
+    font-size: 1.95rem;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    line-height: 1.28;
     margin: 6px 0 8px 0;
-    color: #1a1a1a;
+    color: #121212;
 }
 
 .subtitulo-materia {
     font-style: italic;
-    font-size: 0.95rem;
+    font-size: 0.98rem;
     color: #555555;
-    margin-bottom: 20px;
+    margin-bottom: 22px;
+    line-height: 1.45;
 }
 
 p {
     font-size: 0.92rem;
-    line-height: 1.65;
-    color: #333333;
-    margin-bottom: 14px;
+    line-height: 1.75;
+    color: #2c2c2c;
+    margin-bottom: 15px;
     text-align: justify;
 }
 
 /* Cartões das Personagens */
 .grade-personagens {
     display: flex;
-    gap: 15px;
+    gap: 16px;
     justify-content: space-between;
-    margin: 20px 0;
+    margin: 22px 0;
 }
 
 .cartao-personagem {
     flex: 1;
-    background-color: #f3ebd9;
+    background-color: #f3edd2;
     padding: 12px;
-    border-radius: 4px;
-    border: 1px solid #e2d6c1;
+    border-radius: 3px;
+    border: 1px solid #e0d7c3;
 }
 
 .cartao-personagem img {
     width: 100%;
     height: 180px;
     object-fit: cover;
-    border-radius: 3px;
+    border-radius: 2px;
     margin: 0 0 10px 0;
-    border: 1px solid #c8bcab;
+    border: 1px solid #d0c5b0;
 }
 
 .numero {
     color: #7a2818;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 0.85rem;
     display: block;
-    margin-bottom: 2px;
+    margin-bottom: 3px;
+    font-family: system-ui, -apple-system, sans-serif;
 }
 
 .cartao-personagem h3 {
-    font-size: 0.98rem;
-    font-weight: bold;
+    font-size: 1.05rem;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
     margin-bottom: 6px;
-    color: #1a1a1a;
+    color: #121212;
 }
 
 .cartao-personagem p {
     font-size: 0.84rem;
-    line-height: 1.45;
+    line-height: 1.5;
     color: #333333;
     margin-bottom: 8px;
     text-align: left;
 }
 
-/* Caixinha Bege Destaque / Resumo */
+/* Caixinha de Destaque / Resumo */
 .bloco-resumo {
-    background-color: #e5dabf;
-    padding: 10px 12px;
+    background-color: #e8deca;
+    padding: 11px 13px;
     border-radius: 3px;
     border-left: 3px solid #7a2818;
-    margin-top: 10px;
+    margin-top: 12px;
 }
 
 .bloco-resumo p {
-    font-size: 0.82rem;
-    line-height: 1.45;
+    font-size: 0.84rem;
+    line-height: 1.5;
     color: #222222;
     margin: 0;
     text-align: left;
 }
 
-/* Rodapé e Botões de Navegação */
+/* Rodapé e Botões */
 .rodape-materia, footer {
     margin-top: 35px;
 }
 
 .rodape-texto {
-    font-size: 0.7rem;
+    font-size: 0.68rem;
     text-align: center;
-    font-weight: bold;
+    font-weight: 700;
+    letter-spacing: 1px;
     margin: 10px 0;
     color: #555555;
     text-transform: uppercase;
+    font-family: system-ui, -apple-system, sans-serif;
 }
 
 .botoes-navegacao {
@@ -212,15 +231,16 @@ p {
 }
 
 .btn-nav, a.btn-nav {
-    background-color: #e5dabf;
-    color: #1a1a1a;
+    background-color: #e8deca;
+    color: #121212;
     text-decoration: none;
     padding: 8px 14px;
-    font-size: 0.75rem;
-    font-weight: bold;
+    font-size: 0.72rem;
+    font-weight: 700;
     border-radius: 12px;
-    border: 1px solid #d4c7aa;
-    transition: background 0.2s;
+    border: 1px solid #d6cbba;
+    transition: all 0.2s ease;
+    font-family: system-ui, -apple-system, sans-serif;
 }
 
 .btn-nav:hover, a.btn-nav:hover {
@@ -229,17 +249,18 @@ p {
     border-color: #7a2818;
 }
 
-/* Ajuste simples para celular */
+/* Responsivo para telemóveis */
 @media (max-width: 600px) {
     .grade-personagens {
         flex-direction: column;
     }
 
     .titulo-jornal, h1 {
-        font-size: 2.1rem;
+        font-size: 2.2rem;
     }
 
     .titulo-materia, h2 {
-        font-size: 1.45rem;
+        font-size: 1.5rem;
     }
 }
+
