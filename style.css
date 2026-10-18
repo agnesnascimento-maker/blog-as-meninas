@@ -201,7 +201,7 @@ p {
     text-align: left;
 }
 
-/* Blocos de Destaque / Resumo (Estilo Marrom Terracota) */
+/* Blocos de Destaque / Resumo (Marrom Terracota) */
 .bloco-resumo {
     background-color: #f3ebd9;
     padding: 16px;
@@ -219,19 +219,19 @@ p {
     text-align: left;
 }
 
-/* Bloco Especial de Perguntas/Reflexão (Estilo Azul-Água / Verde-Petróleo) */
+/* Bloco de Perguntas/Reflexão (Marrom Vintage Suave) */
 .bloco-reflexao {
-    background-color: #e6f2f2;
+    background-color: #f2e8d5;
     padding: 18px;
     border-radius: 4px;
-    border-left: 5px solid #2A6F78;
+    border-left: 5px solid #8B4513;
     margin: 25px 0;
     clear: both;
 }
 
 .bloco-reflexao p {
     font-size: 0.95rem;
-    color: #1d4e54;
+    color: #8B4513;
     margin-bottom: 10px;
     font-weight: 700;
     text-align: left;
@@ -298,22 +298,22 @@ p {
     font-family: system-ui, -apple-system, sans-serif;
 }
 
-/* Bloco Botão Filme */
+/* Bloco Botão Filme (Estilo Vintage Marrom/Creme) */
 .bloco-link-filme {
-    background-color: #2A6F78;
-    border-left: 5px solid #1d4e54;
+    background-color: #f2e8d5;
+    border-left: 5px solid #8B4513;
     padding: 22px;
     border-radius: 4px;
     text-align: center;
     margin-top: 30px;
-    color: #ffffff;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    color: #222222;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 .bloco-link-filme p {
     font-size: 0.95rem;
-    color: #f1e7d0;
-    margin-bottom: 15px;
+    color: #8B4513;
+    margin-bottom: 12px;
     text-align: center;
 }
 
