@@ -85,7 +85,7 @@ header hr:last-of-type, .cabecalho hr:last-of-type {
     border-top: 3px double #1a1a1a;
 }
 
-/* Menu de Navegação - MARROM */
+/* Menu de Navegação */
 .menu-navegacao, nav {
     display: flex;
     justify-content: center;
@@ -111,14 +111,14 @@ header hr:last-of-type, .cabecalho hr:last-of-type {
 }
 
 .menu-navegacao a.ativo, nav a.ativo {
-    background-color: #5c2c0c !important; /* Marrom escuro */
+    background-color: #5c2c0c !important;
     color: #ffffff !important;
 }
 
 /* Matérias e Textos */
 .dossie-tag {
     font-size: 0.7rem;
-    color: #5c2c0c !important; /* Marrom escuro */
+    color: #5c2c0c !important;
     font-weight: 700;
     letter-spacing: 1.2px;
     margin-top: 20px;
@@ -169,7 +169,6 @@ p {
     flex-direction: column;
 }
 
-/* PADRONIZAÇÃO DAS FOTOS */
 .cartao-personagem img {
     width: 100% !important;
     height: 220px !important;
@@ -181,7 +180,7 @@ p {
 }
 
 .numero {
-    color: #5c2c0c !important; /* Marrom escuro */
+    color: #5c2c0c !important;
     font-weight: 700;
     font-size: 0.85rem;
     display: block;
@@ -205,12 +204,12 @@ p {
     text-align: left;
 }
 
-/* Blocos de Destaque / Resumo - MARROM VINTAGE */
+/* Blocos de Destaque / Resumo (Marrom e Creme) */
 .bloco-resumo {
     background-color: #f3ebd9 !important;
     padding: 16px;
     border-radius: 4px;
-    border-left: 5px solid #5c2c0c !important; /* Tracinho Marrom */
+    border-left: 5px solid #5c2c0c !important;
     margin: 22px 0;
     clear: both;
 }
@@ -223,19 +222,19 @@ p {
     text-align: left;
 }
 
-/* Bloco de Perguntas e Reflexão - VERDE CLARO SÁLVIA */
+/* Bloco de Perguntas e Reflexão (Marrom e Creme) */
 .bloco-reflexao {
-    background-color: #e8f0e6 !important; /* Fundo Verde Claro */
+    background-color: #f3ebd9 !important;
     padding: 18px;
     border-radius: 4px;
-    border-left: 5px solid #2d5a3f !important; /* Tracinho Verde */
+    border-left: 5px solid #5c2c0c !important;
     margin: 25px 0;
     clear: both;
 }
 
 .bloco-reflexao p {
     font-size: 0.95rem;
-    color: #2d5a3f !important; /* Texto título Verde */
+    color: #5c2c0c !important;
     margin-bottom: 10px;
     font-weight: 700;
     text-align: left;
@@ -248,7 +247,7 @@ p {
     color: #222222 !important;
 }
 
-/* Bloco Créditos */
+/* Bloco de Créditos */
 .bloco-creditos {
     margin-top: 20px;
     background-color: #f1e7d0;
@@ -302,28 +301,28 @@ p {
     font-family: system-ui, -apple-system, sans-serif;
 }
 
-/* Bloco Botão Filme - COMBINAÇÃO VERDE E MARROM */
+/* BLOCO DO VÍDEO COMPATÍVEL COM O MARROM DO BOTÃO */
 .bloco-link-filme {
-    background-color: #e8f0e6 !important; /* Fundo Verde Claro */
-    border-left: 5px solid #2d5a3f !important; /* Tracinho Verde */
+    background-color: #f3ebd9 !important; /* Fundo Creme Vintage */
+    border-left: 5px solid #5c2c0c !important; /* Borda Lateral Marrom */
     padding: 22px;
     border-radius: 4px;
     text-align: center;
     margin-top: 30px;
-    color: #222222;
+    color: #222222 !important;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 .bloco-link-filme p {
     font-size: 0.95rem;
-    color: #2d5a3f !important;
+    color: #5c2c0c !important; /* Texto Marrom Escuro */
     margin-bottom: 12px;
     text-align: center;
 }
 
 .btn-youtube-filme {
     display: inline-block;
-    background-color: #5c2c0c !important; /* Botão Marrom */
+    background-color: #5c2c0c !important; /* Botão Marrom Escuro */
     color: #ffffff !important;
     text-decoration: none;
     font-family: system-ui, -apple-system, sans-serif;
