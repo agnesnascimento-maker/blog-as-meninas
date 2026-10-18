@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@700;900&family=Playfair+Display:ital,wght@0,700;1,400&family=Lora:ital,wght@0,400;0,500;1,400&display=swap');
 
-/* Garante que o fundo preenche a ecrã inteira sem sobras no fundo */
+/* Garante que a cor de fundo preencha toda a tela sem sobras no rodapé */
 html {
     min-height: 100vh;
     background-color: #faf6ee;
@@ -24,7 +24,7 @@ body {
     box-sizing: border-box;
 }
 
-/* Moldura e exibição das imagens */
+/* Estilo geral de imagens (ajustado com contain para nunca cortar) */
 img {
     max-width: 100%;
     max-height: 450px;
@@ -38,7 +38,7 @@ img {
     background-color: #f3ebd9;
 }
 
-/* Contentor principal */
+/* Container principal centralizado */
 .cabecalho,
 .conteudo,
 .rodape-materia,
@@ -56,7 +56,7 @@ footer {
     text-align: center;
 }
 
-/* Data e local no topo */
+/* Data e edição no topo */
 .subtitulo-topo {
     display: flex;
     justify-content: space-between;
@@ -69,7 +69,7 @@ footer {
     font-family: system-ui, -apple-system, sans-serif;
 }
 
-/* Título GAZETA LITERÁRIA em estilo editorial clássico de imprensa */
+/* Título GAZETA LITERÁRIA chamativo em estilo de capa de jornal */
 .titulo-jornal, h1 {
     font-family: 'Playfair Display SC', 'Playfair Display', Georgia, serif;
     font-size: 3.8rem;
@@ -116,7 +116,7 @@ header hr:last-of-type, .cabecalho hr:last-of-type {
     font-family: system-ui, -apple-system, sans-serif;
 }
 
-/* Efeito hover no menu */
+/* Efeito hover nos botões */
 .menu-navegacao a:hover, nav a:hover {
     background-color: #eee3ce;
 }
@@ -127,7 +127,7 @@ header hr:last-of-type, .cabecalho hr:last-of-type {
     color: #ffffff;
 }
 
-/* Etiqueta vermelha acima do título da matéria */
+/* Tag acima do título da matéria */
 .dossie-tag {
     font-size: 0.7rem;
     color: #7a2818;
@@ -138,7 +138,7 @@ header hr:last-of-type, .cabecalho hr:last-of-type {
     font-family: system-ui, -apple-system, sans-serif;
 }
 
-/* Título das matérias em destaque jornalístico */
+/* Título das matérias */
 .titulo-materia, h2 {
     font-family: 'Playfair Display', Georgia, serif;
     font-size: 2.2rem;
@@ -182,13 +182,15 @@ p {
     border: 1px solid #dfd4c1;
 }
 
+/* Imagem dos personagens ajustada com contain para nunca cortar no celular */
 .cartao-personagem img {
     width: 100%;
     height: 180px;
-    object-fit: cover;
+    object-fit: contain;
     border-radius: 2px;
     margin: 0 0 10px 0;
     border: 1px solid #d0c5b0;
+    background-color: #e8dfd1;
 }
 
 .numero {
@@ -216,7 +218,7 @@ p {
     text-align: left;
 }
 
-/* Caixa de resumo com ajuste para não quebrar com a imagem flutuante */
+/* Caixa de resumo com clear para alinhar perfeitamente sob a imagem */
 .bloco-resumo {
     background-color: #e8ddc7;
     padding: 16px;
@@ -234,7 +236,7 @@ p {
     text-align: left;
 }
 
-/* Caixa de créditos dos alunos */
+/* Caixa de créditos */
 .bloco-creditos {
     margin-top: 20px;
     background-color: #f1e7d0;
@@ -252,7 +254,7 @@ p {
     text-align: left;
 }
 
-/* Estrutura com imagem flutuante ao lado do texto no PC */
+/* Matéria com imagem lateral */
 .materia-com-imagem-lado {
     margin-top: 20px;
 }
@@ -274,13 +276,14 @@ p {
     border-radius: 3px;
 }
 
+/* Imagem lateral ajustada com contain para não ser cortada */
 .imagem-lado img {
     width: 100%;
     height: auto;
     max-height: 360px;
     margin: 0 0 6px 0;
     display: block;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .legenda-imagem {
@@ -372,7 +375,7 @@ p {
     border-color: #7a2818;
 }
 
-/* Regras de adaptação para telemóvel */
+/* Ajustes para telas menores / celulares */
 @media (max-width: 600px) {
     body {
         padding: 20px 12px;
@@ -405,8 +408,9 @@ p {
     }
 
     .imagem-lado img, img {
-        max-height: 250px;
+        max-height: 300px;
         margin: 10px auto;
+        object-fit: contain;
     }
 
     .grade-personagens {
