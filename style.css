@@ -203,10 +203,10 @@ p {
 
 /* Blocos de Destaque / Resumo (Marrom Terracota) */
 .bloco-resumo {
-    background-color: #f3ebd9;
+    background-color: #f3ebd9 !important;
     padding: 16px;
     border-radius: 4px;
-    border-left: 5px solid #8B4513;
+    border-left: 5px solid #8B4513 !important;
     margin: 22px 0;
     clear: both;
 }
@@ -298,7 +298,7 @@ p {
     font-family: system-ui, -apple-system, sans-serif;
 }
 
-/* Bloco Botão Filme (Marrom e Creme Jornal) */
+/* Bloco Botão Filme (Marrom e Creme) */
 .bloco-link-filme {
     background-color: #f3ebd9 !important;
     border-left: 5px solid #8B4513 !important;
