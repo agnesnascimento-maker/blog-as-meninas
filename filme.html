@@ -4,43 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gazeta Literária - O Filme</title>
-    <link rel="stylesheet" href="style.css?v=12">
-    <style>
-        .bloco-link-filme {
-            background-color: #e8deca;
-            border-left: 5px solid #7a2818;
-            padding: 20px;
-            border-radius: 4px;
-            text-align: center;
-            margin-top: 30px;
-        }
-
-        .bloco-link-filme p {
-            font-size: 0.95rem;
-            color: #333;
-            margin-bottom: 15px;
-            text-align: center;
-        }
-
-        .btn-youtube-filme {
-            display: inline-block;
-            background-color: #bb0000;
-            color: #ffffff !important;
-            text-decoration: none;
-            font-family: system-ui, -apple-system, sans-serif;
-            font-weight: bold;
-            font-size: 0.85rem;
-            padding: 12px 22px;
-            border-radius: 25px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            transition: background 0.2s ease;
-        }
-
-        .btn-youtube-filme:hover {
-            background-color: #e60000;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css?v=14">
 </head>
 <body>
 
@@ -67,12 +31,19 @@
         <h2 class="titulo-materia">AS MENINAS NO CINEMA (1995)</h2>
         <p class="subtitulo-materia">O aclamado romance de Lygia Fagundes Telles ganhou vida nas telas em uma adaptação marcante dirigida por Emiliano Ribeiro.</p>
 
-        <!-- Capa da adaptação -->
-        <img src="fotos/livro.png" alt="Capa do Filme As Meninas (1995)">
+        <!-- Bloco de conteúdo com a imagem de lado -->
+        <div class="materia-com-imagem-lado">
+            <div class="imagem-lado">
+                <img src="fotos/filme.png" onerror="this.onerror=null; this.src='fotos/livro.png';" alt="Capa do Filme As Meninas (1995)">
+                <span class="legenda-imagem">Cartaz da adaptação (1995)</span>
+            </div>
 
-        <p>A transposição do universo denso e psicológico do livro para a linguagem audiovisual concretizou-se em 1995. Dirigido por Emiliano Ribeiro, o longa-metragem assumiu o difícil desafio de traduzir a narrative fragmentada e os fluxos de consciência de Lygia em imagens, reconstruindo a atmosfera claustrofóbica do pensionato de freiras em São Paulo durante a ditadura militar.</p>
-        
-        <p>O filme foca no entrelaçamento dos destinos e das angústias das três jovens protagonistas: Adriana Esteves interpreta a militante Lia, Drica Moraes dá vida à introspectiva Lorena e Claudia Liz encarna a trágica Ana Clara. A produção foi elogiada por preservar o tom intimista dos diálogos originais e a tensão política que permeia a convivência das personagens.</p>
+            <p>A transposição do universo denso e psicológico do livro para a linguagem audiovisual concretizou-se em 1995. Dirigido por Emiliano Ribeiro, o longa-metragem assumiu o difícil desafio de traduzir a narrativa fragmentada e os fluxos de consciência de Lygia em imagens, reconstruindo a atmosfera claustrofóbica do pensionato de freiras em São Paulo durante a ditadura militar.</p>
+
+            <p>O filme foca no entrelaçamento dos destinos e das angústias das três jovens protagonistas: Adriana Esteves interpreta a militante Lia, Drica Moraes dá vida à introspectiva Lorena e Claudia Liz encarna a trágica Ana Clara. A produção foi elogiada por preservar o tom intimista dos diálogos originais e a tensão política que permeia a convivência das personagens.</p>
+        </div>
+
+        <div style="clear: both;"></div>
 
         <!-- Bloco do Botão do YouTube -->
         <div class="bloco-link-filme">
@@ -101,3 +72,4 @@
 
 </body>
 </html>
+
