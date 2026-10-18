@@ -1,20 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@700;900&family=Playfair+Display:ital,wght@0,700;1,400&family=Lora:ital,wght@0,400;0,500;1,400&display=swap');
 
-/* Garante que a cor de fundo preencha toda a tela sem sobras no rodapé */
-html {
-    min-height: 100vh;
-    background-color: #faf6ee;
-}
-
-body {
-    min-height: 100vh;
+/* Fundo limpo sem forçar altura mínima exagerada */
+html, body {
     background-color: #faf6ee;
     color: #242424;
     font-family: 'Lora', 'Georgia', serif;
     font-weight: 400;
-    padding: 24px 14px 40px 14px;
     line-height: 1.8;
     -webkit-font-smoothing: antialiased;
+}
+
+body {
+    padding: 24px 14px 20px 14px;
 }
 
 /* Reset de margens e caixas */
@@ -24,7 +21,7 @@ body {
     box-sizing: border-box;
 }
 
-/* Estilo geral de imagens (ajustado com contain para nunca cortar) */
+/* Estilo geral de imagens no Computador */
 img {
     max-width: 100%;
     max-height: 450px;
@@ -69,7 +66,7 @@ footer {
     font-family: system-ui, -apple-system, sans-serif;
 }
 
-/* Título GAZETA LITERÁRIA chamativo em estilo de capa de jornal */
+/* Título GAZETA LITERÁRIA em estilo de capa de jornal */
 .titulo-jornal, h1 {
     font-family: 'Playfair Display SC', 'Playfair Display', Georgia, serif;
     font-size: 3.8rem;
@@ -121,7 +118,7 @@ header hr:last-of-type, .cabecalho hr:last-of-type {
     background-color: #eee3ce;
 }
 
-/* Aba ativa em tom vinho */
+/* Aba ativa */
 .menu-navegacao a.ativo, nav a.ativo {
     background-color: #7a2818;
     color: #ffffff;
@@ -166,7 +163,7 @@ p {
     text-align: justify;
 }
 
-/* Cartões de personagens */
+/* Cartões de personagens no Computador */
 .grade-personagens {
     display: flex;
     gap: 16px;
@@ -182,15 +179,13 @@ p {
     border: 1px solid #dfd4c1;
 }
 
-/* Imagem dos personagens ajustada com contain para nunca cortar no celular */
 .cartao-personagem img {
     width: 100%;
     height: 180px;
-    object-fit: contain;
+    object-fit: cover;
     border-radius: 2px;
     margin: 0 0 10px 0;
     border: 1px solid #d0c5b0;
-    background-color: #e8dfd1;
 }
 
 .numero {
@@ -218,7 +213,7 @@ p {
     text-align: left;
 }
 
-/* Caixa de resumo com clear para alinhar perfeitamente sob a imagem */
+/* Caixa de resumo */
 .bloco-resumo {
     background-color: #e8ddc7;
     padding: 16px;
@@ -254,7 +249,7 @@ p {
     text-align: left;
 }
 
-/* Matéria com imagem lateral */
+/* Matéria com imagem lateral no Computador */
 .materia-com-imagem-lado {
     margin-top: 20px;
 }
@@ -276,14 +271,13 @@ p {
     border-radius: 3px;
 }
 
-/* Imagem lateral ajustada com contain para não ser cortada */
 .imagem-lado img {
     width: 100%;
     height: auto;
     max-height: 360px;
     margin: 0 0 6px 0;
     display: block;
-    object-fit: contain;
+    object-fit: cover;
 }
 
 .legenda-imagem {
@@ -334,9 +328,10 @@ p {
     transform: translateY(-2px);
 }
 
-/* Rodapé */
+/* Rodapé sem margens desnecessárias na parte inferior */
 .rodape-materia, footer {
-    margin-top: 35px;
+    margin-top: 25px;
+    margin-bottom: 0;
 }
 
 .rodape-texto {
@@ -350,10 +345,12 @@ p {
     font-family: system-ui, -apple-system, sans-serif;
 }
 
+/* Botões de navegação no rodapé */
 .botoes-navegacao {
     display: flex;
     justify-content: space-between;
     margin-top: 15px;
+    margin-bottom: 0;
 }
 
 .btn-nav, a.btn-nav {
@@ -375,7 +372,7 @@ p {
     border-color: #7a2818;
 }
 
-/* Ajustes para telas menores / celulares */
+/* AJUSTES PARA MODO TELEMÓVEL */
 @media (max-width: 600px) {
     body {
         padding: 20px 12px;
@@ -408,9 +405,18 @@ p {
     }
 
     .imagem-lado img, img {
-        max-height: 300px;
+        width: 100%;
+        height: auto !important;
+        max-height: none !important;
+        object-fit: contain !important;
         margin: 10px auto;
-        object-fit: contain;
+    }
+
+    .cartao-personagem img {
+        width: 100%;
+        height: auto !important;
+        max-height: 220px !important;
+        object-fit: contain !important;
     }
 
     .grade-personagens {
@@ -421,3 +427,4 @@ p {
         text-align: left;
     }
 }
+
