@@ -240,38 +240,41 @@ p {
 }
 
 .bloco-link-filme {
-    background-color: #e8deca;
-    border-left: 5px solid #7a2818;
-    padding: 20px;
+    background-color: #4a150b;
+    border-left: 5px solid #2b0b06;
+    padding: 22px;
     border-radius: 4px;
     text-align: center;
     margin-top: 30px;
+    color: #faf6ee;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
 .bloco-link-filme p {
     font-size: 0.95rem;
-    color: #333;
+    color: #f1e7d0;
     margin-bottom: 15px;
     text-align: center;
 }
 
 .btn-youtube-filme {
     display: inline-block;
-    background-color: #bb0000;
+    background-color: #c0392b;
     color: #ffffff !important;
     text-decoration: none;
     font-family: system-ui, -apple-system, sans-serif;
     font-weight: bold;
     font-size: 0.85rem;
-    padding: 12px 22px;
+    padding: 12px 24px;
     border-radius: 25px;
     text-transform: uppercase;
     letter-spacing: 1px;
-    transition: background 0.2s ease;
+    transition: background 0.2s ease, transform 0.2s ease;
 }
 
 .btn-youtube-filme:hover {
-    background-color: #e60000;
+    background-color: #e74c3c;
+    transform: translateY(-2px);
 }
 
 .rodape-materia, footer {
