@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@700;900&family=Playfair+Display:ital,wght@0,700;1,400&family=Lora:ital,wght@0,400;0,500;1,400&display=swap');
 
-/* Fundo limpo sem forçar altura mínima exagerada */
+/* Configurações do corpo */
 html, body {
     background-color: #faf6ee;
     color: #242424;
@@ -14,28 +14,26 @@ body {
     padding: 24px 14px 20px 14px;
 }
 
-/* Reset de margens e caixas */
+/* Reset de margens */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Estilo geral de imagens no Computador */
+/* Moldura geral de imagens (ajustada para não cortar nada) */
 img {
+    width: 100%;
     max-width: 100%;
-    max-height: 450px;
     height: auto;
     display: block;
-    margin: 22px auto;
+    margin: 18px auto;
     border: 1px solid #dcd1be;
     border-radius: 2px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    object-fit: contain;
-    background-color: #f3ebd9;
 }
 
-/* Container principal centralizado */
+/* Contentor principal */
 .cabecalho,
 .conteudo,
 .rodape-materia,
@@ -47,13 +45,13 @@ footer {
     width: 100%;
 }
 
-/* Cabeçalho no topo */
+/* Cabeçalho */
 .cabecalho, header {
     margin-bottom: 24px;
     text-align: center;
 }
 
-/* Data e edição no topo */
+/* Data e local */
 .subtitulo-topo {
     display: flex;
     justify-content: space-between;
@@ -66,7 +64,7 @@ footer {
     font-family: system-ui, -apple-system, sans-serif;
 }
 
-/* Título GAZETA LITERÁRIA em estilo de capa de jornal */
+/* Título principal Gazeta Literária */
 .titulo-jornal, h1 {
     font-family: 'Playfair Display SC', 'Playfair Display', Georgia, serif;
     font-size: 3.8rem;
@@ -79,14 +77,13 @@ footer {
     text-transform: uppercase;
 }
 
-/* Linha preta simples */
+/* Linhas divisórias */
 .linha-jornal, hr {
     border: 0;
     border-top: 1px solid #222222;
     margin: 6px 0;
 }
 
-/* Linha preta dupla sob a navegação */
 header hr:last-of-type, .cabecalho hr:last-of-type {
     border-top: 3px double #1a1a1a;
 }
@@ -100,7 +97,6 @@ header hr:last-of-type, .cabecalho hr:last-of-type {
     padding: 8px 0;
 }
 
-/* Botões do menu */
 .menu-navegacao a, nav a {
     text-decoration: none;
     color: #222222;
@@ -113,18 +109,16 @@ header hr:last-of-type, .cabecalho hr:last-of-type {
     font-family: system-ui, -apple-system, sans-serif;
 }
 
-/* Efeito hover nos botões */
 .menu-navegacao a:hover, nav a:hover {
     background-color: #eee3ce;
 }
 
-/* Aba ativa */
 .menu-navegacao a.ativo, nav a.ativo {
     background-color: #7a2818;
     color: #ffffff;
 }
 
-/* Tag acima do título da matéria */
+/* Tag acima da matéria */
 .dossie-tag {
     font-size: 0.7rem;
     color: #7a2818;
@@ -145,7 +139,6 @@ header hr:last-of-type, .cabecalho hr:last-of-type {
     color: #121212;
 }
 
-/* Subtítulo em itálico */
 .subtitulo-materia {
     font-style: italic;
     font-size: 0.98rem;
@@ -154,7 +147,6 @@ header hr:last-of-type, .cabecalho hr:last-of-type {
     line-height: 1.45;
 }
 
-/* Parágrafos de texto */
 p {
     font-size: 0.94rem;
     line-height: 1.8;
@@ -163,7 +155,7 @@ p {
     text-align: justify;
 }
 
-/* Cartões de personagens no Computador */
+/* Cartões das Personagens */
 .grade-personagens {
     display: flex;
     gap: 16px;
@@ -179,13 +171,15 @@ p {
     border: 1px solid #dfd4c1;
 }
 
+/* Foto da personagem preenchendo a largura sem nenhum corte de altura */
 .cartao-personagem img {
     width: 100%;
-    height: 180px;
-    object-fit: cover;
+    height: auto;
+    display: block;
     border-radius: 2px;
     margin: 0 0 10px 0;
     border: 1px solid #d0c5b0;
+    background: none;
 }
 
 .numero {
@@ -231,7 +225,7 @@ p {
     text-align: left;
 }
 
-/* Caixa de créditos */
+/* Créditos */
 .bloco-creditos {
     margin-top: 20px;
     background-color: #f1e7d0;
@@ -249,7 +243,7 @@ p {
     text-align: left;
 }
 
-/* Matéria com imagem lateral no Computador */
+/* Matéria com Imagem do Lado sem cortes */
 .materia-com-imagem-lado {
     margin-top: 20px;
 }
@@ -265,19 +259,19 @@ p {
     width: 260px;
     margin: 0 20px 15px 0;
     text-align: center;
-    background-color: #f3ebd9;
-    padding: 8px;
-    border: 1px solid #dcd1be;
-    border-radius: 3px;
+    background-color: transparent;
+    padding: 0;
+    border: none;
 }
 
 .imagem-lado img {
     width: 100%;
     height: auto;
-    max-height: 360px;
     margin: 0 0 6px 0;
     display: block;
-    object-fit: cover;
+    border: 1px solid #dcd1be;
+    border-radius: 3px;
+    background: none;
 }
 
 .legenda-imagem {
@@ -289,7 +283,7 @@ p {
     font-family: system-ui, -apple-system, sans-serif;
 }
 
-/* Bloco escuro do filme */
+/* Bloco Filme */
 .bloco-link-filme {
     background-color: #4a150b;
     border-left: 5px solid #2b0b06;
@@ -328,7 +322,7 @@ p {
     transform: translateY(-2px);
 }
 
-/* Rodapé sem margens desnecessárias na parte inferior */
+/* Rodapé */
 .rodape-materia, footer {
     margin-top: 25px;
     margin-bottom: 0;
@@ -345,7 +339,6 @@ p {
     font-family: system-ui, -apple-system, sans-serif;
 }
 
-/* Botões de navegação no rodapé */
 .botoes-navegacao {
     display: flex;
     justify-content: space-between;
@@ -372,7 +365,7 @@ p {
     border-color: #7a2818;
 }
 
-/* AJUSTES PARA MODO TELEMÓVEL */
+/* Adaptação no Telemóvel */
 @media (max-width: 600px) {
     body {
         padding: 20px 12px;
@@ -404,19 +397,14 @@ p {
         margin: 0 0 16px 0;
     }
 
-    .imagem-lado img, img {
+    .imagem-lado img {
         width: 100%;
-        height: auto !important;
-        max-height: none !important;
-        object-fit: contain !important;
-        margin: 10px auto;
+        height: auto;
     }
 
     .cartao-personagem img {
         width: 100%;
-        height: auto !important;
-        max-height: 220px !important;
-        object-fit: contain !important;
+        height: auto;
     }
 
     .grade-personagens {
@@ -427,4 +415,3 @@ p {
         text-align: left;
     }
 }
-
