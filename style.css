@@ -85,7 +85,7 @@ header hr:last-of-type, .cabecalho hr:last-of-type {
     border-top: 3px double #1a1a1a;
 }
 
-/* Menu de Navegação */
+/* Menu de Navegação - MARROM */
 .menu-navegacao, nav {
     display: flex;
     justify-content: center;
@@ -107,18 +107,18 @@ header hr:last-of-type, .cabecalho hr:last-of-type {
 }
 
 .menu-navegacao a:hover, nav a:hover {
-    background-color: #e2ebe0;
+    background-color: #eee3ce;
 }
 
 .menu-navegacao a.ativo, nav a.ativo {
-    background-color: #2d5a3f !important;
+    background-color: #5c2c0c !important; /* Marrom escuro */
     color: #ffffff !important;
 }
 
 /* Matérias e Textos */
 .dossie-tag {
     font-size: 0.7rem;
-    color: #2d5a3f !important;
+    color: #5c2c0c !important; /* Marrom escuro */
     font-weight: 700;
     letter-spacing: 1.2px;
     margin-top: 20px;
@@ -165,11 +165,15 @@ p {
     padding: 12px;
     border-radius: 3px;
     border: 1px solid #dfd4c1;
+    display: flex;
+    flex-direction: column;
 }
 
+/* PADRONIZAÇÃO DAS FOTOS */
 .cartao-personagem img {
-    width: 100%;
-    height: auto;
+    width: 100% !important;
+    height: 220px !important;
+    object-fit: cover !important;
     display: block;
     border-radius: 2px;
     margin: 0 0 10px 0;
@@ -177,7 +181,7 @@ p {
 }
 
 .numero {
-    color: #2d5a3f !important;
+    color: #5c2c0c !important; /* Marrom escuro */
     font-weight: 700;
     font-size: 0.85rem;
     display: block;
@@ -201,12 +205,12 @@ p {
     text-align: left;
 }
 
-/* Blocos de Destaque / Resumo (Verde Claro Vintage) */
+/* Blocos de Destaque / Resumo - MARROM VINTAGE */
 .bloco-resumo {
-    background-color: #e8f0e6 !important;
+    background-color: #f3ebd9 !important;
     padding: 16px;
     border-radius: 4px;
-    border-left: 5px solid #2d5a3f !important;
+    border-left: 5px solid #5c2c0c !important; /* Tracinho Marrom */
     margin: 22px 0;
     clear: both;
 }
@@ -214,24 +218,24 @@ p {
 .bloco-resumo p {
     font-size: 0.88rem;
     line-height: 1.6;
-    color: #1c3626;
+    color: #222222 !important;
     margin: 0;
     text-align: left;
 }
 
-/* Bloco de Perguntas/Reflexão (Verde Claro Vintage) */
+/* Bloco de Perguntas e Reflexão - VERDE CLARO SÁLVIA */
 .bloco-reflexao {
-    background-color: #e8f0e6 !important;
+    background-color: #e8f0e6 !important; /* Fundo Verde Claro */
     padding: 18px;
     border-radius: 4px;
-    border-left: 5px solid #2d5a3f !important;
+    border-left: 5px solid #2d5a3f !important; /* Tracinho Verde */
     margin: 25px 0;
     clear: both;
 }
 
 .bloco-reflexao p {
     font-size: 0.95rem;
-    color: #2d5a3f !important;
+    color: #2d5a3f !important; /* Texto título Verde */
     margin-bottom: 10px;
     font-weight: 700;
     text-align: left;
@@ -241,7 +245,7 @@ p {
     margin-left: 20px;
     font-size: 0.88rem;
     line-height: 1.8;
-    color: #222222;
+    color: #222222 !important;
 }
 
 /* Bloco Créditos */
@@ -298,10 +302,10 @@ p {
     font-family: system-ui, -apple-system, sans-serif;
 }
 
-/* Bloco Botão Filme (Verde Claro Suave) */
+/* Bloco Botão Filme - COMBINAÇÃO VERDE E MARROM */
 .bloco-link-filme {
-    background-color: #e8f0e6 !important;
-    border-left: 5px solid #2d5a3f !important;
+    background-color: #e8f0e6 !important; /* Fundo Verde Claro */
+    border-left: 5px solid #2d5a3f !important; /* Tracinho Verde */
     padding: 22px;
     border-radius: 4px;
     text-align: center;
@@ -319,7 +323,7 @@ p {
 
 .btn-youtube-filme {
     display: inline-block;
-    background-color: #2d5a3f !important;
+    background-color: #5c2c0c !important; /* Botão Marrom */
     color: #ffffff !important;
     text-decoration: none;
     font-family: system-ui, -apple-system, sans-serif;
@@ -333,7 +337,7 @@ p {
 }
 
 .btn-youtube-filme:hover {
-    background-color: #1e3d2a !important;
+    background-color: #3e1d07 !important;
     transform: translateY(-2px);
 }
 
@@ -375,9 +379,9 @@ p {
 }
 
 .btn-nav:hover, a.btn-nav:hover {
-    background-color: #2d5a3f !important;
+    background-color: #5c2c0c !important;
     color: #ffffff !important;
-    border-color: #2d5a3f !important;
+    border-color: #5c2c0c !important;
 }
 
 /* Adaptação telemóveis */
