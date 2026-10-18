@@ -1,38 +1,38 @@
-@@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,400&family=Lora:ital,wght@0,400;0,500;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,400&family=Lora:ital,wght@0,400;0,500;1,400&display=swap');
 
-/* Configurações do corpo da página em papel antigo e texto em tom natural */
+/* Configurações do corpo alinhado normalmente ao topo */
 body {
-    background-color: #f7f3eb;
-    color: #1a1a1a;
-    font-family: 'Lora', Georgia, serif;
+    background-color: #faf6ee;
+    color: #242424;
+    font-family: 'Lora', 'Georgia', serif;
     font-weight: 400;
     padding: 24px 14px;
     line-height: 1.8;
     -webkit-font-smoothing: antialiased;
 }
 
-/* Reset de margens e caixas */
+/* Reset de margens */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Moldura e exibição de imagens */
+/* Moldura e exibição das imagens */
 img {
     max-width: 100%;
     max-height: 450px;
     height: auto;
     display: block;
     margin: 22px auto;
-    border: 1px solid #dcd3c5;
+    border: 1px solid #dcd1be;
     border-radius: 2px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
     object-fit: contain;
-    background-color: #efe8db;
+    background-color: #f3ebd9;
 }
 
-/* Contentor principal do site */
+/* Largura máxima do conteúdo */
 .cabecalho,
 .conteudo,
 .rodape-materia,
@@ -50,45 +50,45 @@ footer {
     text-align: center;
 }
 
-/* Texto de topo com data e local */
+/* Texto de data e local no topo */
 .subtitulo-topo {
     display: flex;
     justify-content: space-between;
-    font-size: 0.72rem;
+    font-size: 0.7rem;
     font-weight: 700;
     letter-spacing: 1.5px;
     margin-bottom: 6px;
-    color: #4a4a4a;
+    color: #555555;
     text-transform: uppercase;
     font-family: system-ui, -apple-system, sans-serif;
 }
 
-/* Título GAZETA LITERÁRIA em fonte editorial natural, fluida e marcante */
+/* Título GAZETA LITERÁRIA em fonte editorial elegante e natural */
 .titulo-jornal, h1 {
-    font-family: 'Cormorant Garamond', Georgia, serif;
-    font-size: 3.8rem;
+    font-family: 'Cormorant Garamond', 'Times New Roman', serif;
+    font-size: 3.6rem;
     font-weight: 700;
-    letter-spacing: 2px;
+    letter-spacing: 1.5px;
     margin: 4px 0 8px 0;
     text-align: center;
-    color: #0d0d0d;
+    color: #121212;
     line-height: 1.1;
     text-transform: uppercase;
 }
 
-/* Linha divisória simples */
+/* Linha preta simples */
 .linha-jornal, hr {
     border: 0;
-    border-top: 1px solid #111111;
+    border-top: 1px solid #222222;
     margin: 6px 0;
 }
 
-/* Linha dupla sob a navegação */
+/* Linha preta dupla sob a navegação */
 header hr:last-of-type, .cabecalho hr:last-of-type {
-    border-top: 3px double #111111;
+    border-top: 3px double #1a1a1a;
 }
 
-/* Disposição dos botões de navegação */
+/* Barra do menu de navegação */
 .menu-navegacao, nav {
     display: flex;
     justify-content: center;
@@ -97,71 +97,70 @@ header hr:last-of-type, .cabecalho hr:last-of-type {
     padding: 8px 0;
 }
 
-/* Estilo dos botões do menu */
+/* Botões do menu */
 .menu-navegacao a, nav a {
     text-decoration: none;
-    color: #111111;
-    font-size: 0.75rem;
+    color: #222222;
+    font-size: 0.72rem;
     font-weight: 700;
     letter-spacing: 0.5px;
-    padding: 6px 12px;
+    padding: 5px 11px;
     border-radius: 12px;
     transition: all 0.2s ease;
     font-family: system-ui, -apple-system, sans-serif;
 }
 
-/* Efeito hover nos botões do menu */
+/* Efeito ao passar o cursor no menu */
 .menu-navegacao a:hover, nav a:hover {
-    background-color: #e8dfd1;
-    color: #000000;
+    background-color: #eee3ce;
 }
 
-/* Aba ativa destacada em tom vinho */
+/* Aba ativa em tom vinho */
 .menu-navegacao a.ativo, nav a.ativo {
     background-color: #7a2818;
     color: #ffffff;
 }
 
-/* Etiqueta acima do título da matéria */
+/* Tag vermelha acima do título da matéria */
 .dossie-tag {
-    font-size: 0.72rem;
+    font-size: 0.7rem;
     color: #7a2818;
-    font-weight: 800;
+    font-weight: 700;
     letter-spacing: 1.2px;
     margin-top: 20px;
     text-transform: uppercase;
     font-family: system-ui, -apple-system, sans-serif;
 }
 
-/* Título das matérias bonito, elegante e natural */
+/* Título das matérias em fonte natural e bonita */
 .titulo-materia, h2 {
     font-family: 'Cormorant Garamond', Georgia, serif;
-    font-size: 2.3rem;
+    font-size: 2.2rem;
     font-weight: 700;
     line-height: 1.25;
-    margin: 6px 0 10px 0;
-    color: #0d0d0d;
+    margin: 6px 0 8px 0;
+    color: #121212;
 }
 
-/* Subtítulo em itálico natural */
+/* Subtítulo em itálico */
 .subtitulo-materia {
     font-style: italic;
-    font-size: 1.05rem;
-    color: #444444;
+    font-size: 0.98rem;
+    color: #555555;
     margin-bottom: 22px;
-    line-height: 1.5;
+    line-height: 1.45;
 }
 
-/* Parágrafos do texto principal */
+/* Parágrafos de texto */
 p {
-    font-size: 0.96rem;
-    line-height: 1.85;
-    color: #222222;
+    font-size: 0.94rem;
+    line-height: 1.8;
+    color: #2c2c2c;
     margin-bottom: 16px;
     text-align: justify;
 }
 
-/* Disposição dos cartões de personagens */
+/* Cartões de personagens */
 .grade-personagens {
     display: flex;
     gap: 16px;
@@ -169,68 +168,62 @@ p {
     margin: 22px 0;
 }
 
-/* Cartão do personagem */
 .cartao-personagem {
     flex: 1;
-    background-color: #ede5d8;
-    padding: 14px;
+    background-color: #f2e9d8;
+    padding: 12px;
     border-radius: 3px;
-    border: 1px solid #dcd1c0;
+    border: 1px solid #dfd4c1;
 }
 
-/* Foto da personagem no cartão */
 .cartao-personagem img {
     width: 100%;
     height: 180px;
     object-fit: cover;
     border-radius: 2px;
     margin: 0 0 10px 0;
-    border: 1px solid #d0c2b0;
+    border: 1px solid #d0c5b0;
 }
 
-/* Número da personagem */
 .numero {
     color: #7a2818;
-    font-weight: 800;
+    font-weight: 700;
     font-size: 0.85rem;
     display: block;
-    margin-bottom: 4px;
+    margin-bottom: 3px;
     font-family: system-ui, -apple-system, sans-serif;
 }
 
-/* Nome da personagem */
 .cartao-personagem h3 {
-    font-size: 1.2rem;
-    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 1.15rem;
+    font-family: 'Cormorant Garamond', serif;
     font-weight: 700;
     margin-bottom: 6px;
-    color: #0d0d0d;
+    color: #121212;
 }
 
-/* Descrição do personagem */
 .cartao-personagem p {
-    font-size: 0.86rem;
-    line-height: 1.55;
-    color: #2c2c2c;
+    font-size: 0.84rem;
+    line-height: 1.5;
+    color: #333333;
     margin-bottom: 8px;
     text-align: left;
 }
 
 /* Caixa de resumo */
 .bloco-resumo {
-    background-color: #e6dcce;
-    padding: 18px;
+    background-color: #e8ddc7;
+    padding: 16px;
     border-radius: 3px;
-    border-left: 5px solid #7a2818;
+    border-left: 4px solid #7a2818;
     margin: 22px 0;
     clear: both;
 }
 
-/* Texto dentro do bloco de resumo */
 .bloco-resumo p {
-    font-size: 0.9rem;
-    line-height: 1.65;
-    color: #1a1a1a;
+    font-size: 0.88rem;
+    line-height: 1.6;
+    color: #222222;
     margin: 0;
     text-align: left;
 }
@@ -238,47 +231,43 @@ p {
 /* Caixa de créditos */
 .bloco-creditos {
     margin-top: 20px;
-    background-color: #eae1d3;
-    border-left: 4px solid #4a4a4a;
+    background-color: #f1e7d0;
+    border-left: 3px solid #555555;
     padding: 16px;
     border-radius: 3px;
     clear: both;
 }
 
-/* Texto dos créditos */
 .bloco-creditos p {
-    font-size: 0.9rem;
+    font-size: 0.88rem;
     line-height: 1.6;
-    color: #1a1a1a;
+    color: #222222;
     margin: 0;
     text-align: left;
 }
 
-/* Estrutura com imagem ao lado do texto */
+/* Layout de imagem ao lado do texto no PC */
 .materia-com-imagem-lado {
     margin-top: 20px;
 }
 
-/* Limpeza do fluxo da imagem flutuante */
 .materia-com-imagem-lado::after {
     content: "";
     display: table;
     clear: both;
 }
 
-/* Moldura da imagem flutuante */
 .imagem-lado {
     float: left;
     width: 260px;
     margin: 0 20px 15px 0;
     text-align: center;
-    background-color: #efe8db;
+    background-color: #f3ebd9;
     padding: 8px;
-    border: 1px solid #dcd3c5;
+    border: 1px solid #dcd1be;
     border-radius: 3px;
 }
 
-/* Ajustes da imagem na moldura */
 .imagem-lado img {
     width: 100%;
     height: auto;
@@ -288,7 +277,6 @@ p {
     object-fit: cover;
 }
 
-/* Legenda por baixo da imagem */
 .legenda-imagem {
     display: block;
     font-size: 0.75rem;
@@ -298,30 +286,28 @@ p {
     font-family: system-ui, -apple-system, sans-serif;
 }
 
-/* Bloco escuro para o destaque do filme */
+/* Bloco escuro do filme */
 .bloco-link-filme {
-    background-color: #42140a;
-    border-left: 5px solid #240a04;
+    background-color: #4a150b;
+    border-left: 5px solid #2b0b06;
     padding: 22px;
     border-radius: 4px;
     text-align: center;
     margin-top: 30px;
-    color: #f7f3eb;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    color: #faf6ee;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
-/* Texto do bloco do filme */
 .bloco-link-filme p {
     font-size: 0.95rem;
-    color: #f7f3eb;
+    color: #f1e7d0;
     margin-bottom: 15px;
     text-align: center;
 }
 
-/* Botão do YouTube */
 .btn-youtube-filme {
     display: inline-block;
-    background-color: #b82d1d;
+    background-color: #c0392b;
     color: #ffffff !important;
     text-decoration: none;
     font-family: system-ui, -apple-system, sans-serif;
@@ -334,9 +320,8 @@ p {
     transition: background 0.2s ease, transform 0.2s ease;
 }
 
-/* Efeito ao passar o cursor no botão do YouTube */
 .btn-youtube-filme:hover {
-    background-color: #d63624;
+    background-color: #e74c3c;
     transform: translateY(-2px);
 }
 
@@ -345,47 +330,43 @@ p {
     margin-top: 35px;
 }
 
-/* Assinatura no rodapé */
 .rodape-texto {
-    font-size: 0.7rem;
+    font-size: 0.68rem;
     text-align: center;
     font-weight: 700;
     letter-spacing: 1px;
     margin: 10px 0;
-    color: #4a4a4a;
+    color: #555555;
     text-transform: uppercase;
     font-family: system-ui, -apple-system, sans-serif;
 }
 
-/* Botões de navegação do rodapé */
 .botoes-navegacao {
     display: flex;
     justify-content: space-between;
     margin-top: 15px;
 }
 
-/* Estilo dos botões do rodapé */
 .btn-nav, a.btn-nav {
-    background-color: #e6dcce;
-    color: #111111;
+    background-color: #e8ddc7;
+    color: #121212;
     text-decoration: none;
     padding: 8px 14px;
-    font-size: 0.75rem;
+    font-size: 0.72rem;
     font-weight: 700;
     border-radius: 12px;
-    border: 1px solid #d2c5b3;
+    border: 1px solid #d6cbba;
     transition: all 0.2s ease;
     font-family: system-ui, -apple-system, sans-serif;
 }
 
-/* Efeito hover nos botões do rodapé */
 .btn-nav:hover, a.btn-nav:hover {
     background-color: #7a2818;
     color: #ffffff;
     border-color: #7a2818;
 }
 
-/* Ajustes automáticos para ecrãs de telemóvel */
+/* Adaptação exclusiva para telemóveis reais */
 @media (max-width: 600px) {
     body {
         padding: 20px 12px;
@@ -398,11 +379,11 @@ p {
     }
 
     .titulo-jornal, h1 {
-        font-size: 2.6rem;
+        font-size: 2.5rem;
     }
 
     .titulo-materia, h2 {
-        font-size: 1.6rem;
+        font-size: 1.5rem;
     }
 
     .materia-com-imagem-lado {
