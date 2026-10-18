@@ -20,7 +20,7 @@ body {
     box-sizing: border-box;
 }
 
-/* Moldura Geral de Imagens (Sem cortes e sem sobras) */
+/* Moldura Geral de Imagens */
 img {
     width: 100%;
     max-width: 100%;
@@ -111,14 +111,14 @@ header hr:last-of-type, .cabecalho hr:last-of-type {
 }
 
 .menu-navegacao a.ativo, nav a.ativo {
-    background-color: #7a2818;
+    background-color: #8B4513;
     color: #ffffff;
 }
 
 /* Matérias e Textos */
 .dossie-tag {
     font-size: 0.7rem;
-    color: #7a2818;
+    color: #8B4513;
     font-weight: 700;
     letter-spacing: 1.2px;
     margin-top: 20px;
@@ -174,11 +174,10 @@ p {
     border-radius: 2px;
     margin: 0 0 10px 0;
     border: 1px solid #d0c5b0;
-    background: none;
 }
 
 .numero {
-    color: #7a2818;
+    color: #8B4513;
     font-weight: 700;
     font-size: 0.85rem;
     display: block;
@@ -202,12 +201,12 @@ p {
     text-align: left;
 }
 
-/* Bloco Destaque / Resumo / Perguntas */
+/* Blocos de Destaque / Resumo (Estilo Marrom Terracota) */
 .bloco-resumo {
-    background-color: #e8ddc7;
+    background-color: #f3ebd9;
     padding: 16px;
-    border-radius: 3px;
-    border-left: 4px solid #7a2818;
+    border-radius: 4px;
+    border-left: 5px solid #8B4513;
     margin: 22px 0;
     clear: both;
 }
@@ -218,6 +217,31 @@ p {
     color: #222222;
     margin: 0;
     text-align: left;
+}
+
+/* Bloco Especial de Perguntas/Reflexão (Estilo Azul-Água / Verde-Petróleo) */
+.bloco-reflexao {
+    background-color: #e6f2f2;
+    padding: 18px;
+    border-radius: 4px;
+    border-left: 5px solid #2A6F78;
+    margin: 25px 0;
+    clear: both;
+}
+
+.bloco-reflexao p {
+    font-size: 0.95rem;
+    color: #1d4e54;
+    margin-bottom: 10px;
+    font-weight: 700;
+    text-align: left;
+}
+
+.bloco-reflexao ol {
+    margin-left: 20px;
+    font-size: 0.88rem;
+    line-height: 1.8;
+    color: #222222;
 }
 
 /* Bloco Créditos */
@@ -254,9 +278,6 @@ p {
     width: 260px;
     margin: 0 20px 15px 0;
     text-align: center;
-    background-color: transparent;
-    padding: 0;
-    border: none;
 }
 
 .imagem-lado img {
@@ -266,7 +287,6 @@ p {
     display: block;
     border: 1px solid #dcd1be;
     border-radius: 3px;
-    background: none;
 }
 
 .legenda-imagem {
@@ -280,14 +300,14 @@ p {
 
 /* Bloco Botão Filme */
 .bloco-link-filme {
-    background-color: #4a150b;
-    border-left: 5px solid #2b0b06;
+    background-color: #2A6F78;
+    border-left: 5px solid #1d4e54;
     padding: 22px;
     border-radius: 4px;
     text-align: center;
     margin-top: 30px;
-    color: #faf6ee;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .bloco-link-filme p {
@@ -299,7 +319,7 @@ p {
 
 .btn-youtube-filme {
     display: inline-block;
-    background-color: #c0392b;
+    background-color: #8B4513;
     color: #ffffff !important;
     text-decoration: none;
     font-family: system-ui, -apple-system, sans-serif;
@@ -313,7 +333,7 @@ p {
 }
 
 .btn-youtube-filme:hover {
-    background-color: #e74c3c;
+    background-color: #a0522d;
     transform: translateY(-2px);
 }
 
@@ -355,12 +375,12 @@ p {
 }
 
 .btn-nav:hover, a.btn-nav:hover {
-    background-color: #7a2818;
+    background-color: #8B4513;
     color: #ffffff;
-    border-color: #7a2818;
+    border-color: #8B4513;
 }
 
-/* Adaptação em Telemóveis */
+/* Adaptação telemóveis */
 @media (max-width: 600px) {
     body {
         padding: 20px 12px;
@@ -390,16 +410,6 @@ p {
         float: none;
         width: 100%;
         margin: 0 0 16px 0;
-    }
-
-    .imagem-lado img {
-        width: 100%;
-        height: auto;
-    }
-
-    .cartao-personagem img {
-        width: 100%;
-        height: auto;
     }
 
     .grade-personagens {
