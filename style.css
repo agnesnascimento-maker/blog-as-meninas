@@ -1,17 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,400&family=Lora:ital,wght@0,400;0,500;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@700;900&family=Playfair+Display:ital,wght@0,700;1,400&family=Lora:ital,wght@0,400;0,500;1,400&display=swap');
 
-/* Configurações do corpo alinhado normalmente ao topo */
+/* Garante que o fundo preenche a ecrã inteira sem sobras no fundo */
+html {
+    min-height: 100vh;
+    background-color: #faf6ee;
+}
+
 body {
+    min-height: 100vh;
     background-color: #faf6ee;
     color: #242424;
     font-family: 'Lora', 'Georgia', serif;
     font-weight: 400;
-    padding: 24px 14px;
+    padding: 24px 14px 40px 14px;
     line-height: 1.8;
     -webkit-font-smoothing: antialiased;
 }
 
-/* Reset de margens */
+/* Reset de margens e caixas */
 * {
     margin: 0;
     padding: 0;
@@ -32,7 +38,7 @@ img {
     background-color: #f3ebd9;
 }
 
-/* Largura máxima do conteúdo */
+/* Contentor principal */
 .cabecalho,
 .conteudo,
 .rodape-materia,
@@ -44,13 +50,13 @@ footer {
     width: 100%;
 }
 
-/* Alinhamento superior do cabeçalho */
+/* Cabeçalho no topo */
 .cabecalho, header {
     margin-bottom: 24px;
     text-align: center;
 }
 
-/* Texto de data e local no topo */
+/* Data e local no topo */
 .subtitulo-topo {
     display: flex;
     justify-content: space-between;
@@ -63,15 +69,15 @@ footer {
     font-family: system-ui, -apple-system, sans-serif;
 }
 
-/* Título GAZETA LITERÁRIA em fonte editorial elegante e natural */
+/* Título GAZETA LITERÁRIA em estilo editorial clássico de imprensa */
 .titulo-jornal, h1 {
-    font-family: 'Cormorant Garamond', 'Times New Roman', serif;
-    font-size: 3.6rem;
-    font-weight: 700;
-    letter-spacing: 1.5px;
+    font-family: 'Playfair Display SC', 'Playfair Display', Georgia, serif;
+    font-size: 3.8rem;
+    font-weight: 900;
+    letter-spacing: 3px;
     margin: 4px 0 8px 0;
     text-align: center;
-    color: #121212;
+    color: #111111;
     line-height: 1.1;
     text-transform: uppercase;
 }
@@ -88,7 +94,7 @@ header hr:last-of-type, .cabecalho hr:last-of-type {
     border-top: 3px double #1a1a1a;
 }
 
-/* Barra do menu de navegação */
+/* Menu de navegação */
 .menu-navegacao, nav {
     display: flex;
     justify-content: center;
@@ -110,7 +116,7 @@ header hr:last-of-type, .cabecalho hr:last-of-type {
     font-family: system-ui, -apple-system, sans-serif;
 }
 
-/* Efeito ao passar o cursor no menu */
+/* Efeito hover no menu */
 .menu-navegacao a:hover, nav a:hover {
     background-color: #eee3ce;
 }
@@ -121,7 +127,7 @@ header hr:last-of-type, .cabecalho hr:last-of-type {
     color: #ffffff;
 }
 
-/* Tag vermelha acima do título da matéria */
+/* Etiqueta vermelha acima do título da matéria */
 .dossie-tag {
     font-size: 0.7rem;
     color: #7a2818;
@@ -132,9 +138,9 @@ header hr:last-of-type, .cabecalho hr:last-of-type {
     font-family: system-ui, -apple-system, sans-serif;
 }
 
-/* Título das matérias em fonte natural e bonita */
+/* Título das matérias em destaque jornalístico */
 .titulo-materia, h2 {
-    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-family: 'Playfair Display', Georgia, serif;
     font-size: 2.2rem;
     font-weight: 700;
     line-height: 1.25;
@@ -196,7 +202,7 @@ p {
 
 .cartao-personagem h3 {
     font-size: 1.15rem;
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Playfair Display', serif;
     font-weight: 700;
     margin-bottom: 6px;
     color: #121212;
@@ -210,7 +216,7 @@ p {
     text-align: left;
 }
 
-/* Caixa de resumo */
+/* Caixa de resumo com ajuste para não quebrar com a imagem flutuante */
 .bloco-resumo {
     background-color: #e8ddc7;
     padding: 16px;
@@ -228,7 +234,7 @@ p {
     text-align: left;
 }
 
-/* Caixa de créditos */
+/* Caixa de créditos dos alunos */
 .bloco-creditos {
     margin-top: 20px;
     background-color: #f1e7d0;
@@ -246,7 +252,7 @@ p {
     text-align: left;
 }
 
-/* Layout de imagem ao lado do texto no PC */
+/* Estrutura com imagem flutuante ao lado do texto no PC */
 .materia-com-imagem-lado {
     margin-top: 20px;
 }
@@ -366,7 +372,7 @@ p {
     border-color: #7a2818;
 }
 
-/* Adaptação exclusiva para telemóveis reais */
+/* Regras de adaptação para telemóvel */
 @media (max-width: 600px) {
     body {
         padding: 20px 12px;
@@ -379,7 +385,8 @@ p {
     }
 
     .titulo-jornal, h1 {
-        font-size: 2.5rem;
+        font-size: 2.4rem;
+        letter-spacing: 1.5px;
     }
 
     .titulo-materia, h2 {
