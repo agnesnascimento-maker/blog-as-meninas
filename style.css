@@ -1,24 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,400&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&display=swap');
 
-/* Configurações de fundo, cor do texto e espaçamento geral da página */
+/* Configurações do corpo da página com centralização vertical na ecrã */
 body {
     background-color: #faf6ee;
     color: #242424;
     font-family: 'Merriweather', 'Georgia', serif;
     font-weight: 300;
-    padding: 24px 14px;
+    padding: 40px 14px;
     line-height: 1.8;
     -webkit-font-smoothing: antialiased;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
 }
 
-/* Zerar margens padrão e padronizar o cálculo do tamanho das caixas */
+/* Zerar margens e espaçamentos padrão de todos os elementos */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Estilo padrão para a exibição de imagens */
+/* Estilo padrão de exibição de imagens */
 img {
     max-width: 100%;
     max-height: 450px;
@@ -32,7 +36,7 @@ img {
     background-color: #f3ebd9;
 }
 
-/* Centralização do conteúdo principal */
+/* Container principal centralizado na largura máxima */
 .cabecalho,
 .conteudo,
 .rodape-materia,
@@ -41,6 +45,7 @@ main,
 footer {
     max-width: 860px;
     margin: 0 auto;
+    width: 100%;
 }
 
 /* Alinhamento e margem inferior do cabeçalho */
@@ -49,7 +54,7 @@ footer {
     text-align: center;
 }
 
-/* Texto com a data e o local no topo do jornal */
+/* Texto de data e local no topo do jornal */
 .subtitulo-topo {
     display: flex;
     justify-content: space-between;
@@ -62,7 +67,7 @@ footer {
     font-family: system-ui, -apple-system, sans-serif;
 }
 
-/* Título principal do jornal */
+/* Título principal "Gazeta Literária" */
 .titulo-jornal, h1 {
     font-size: 3.2rem;
     font-family: 'Playfair Display', 'Times New Roman', serif;
@@ -86,7 +91,7 @@ header hr:last-of-type, .cabecalho hr:last-of-type {
     border-top: 3px double #1a1a1a;
 }
 
-/* Organização do menu de navegação */
+/* Organização dos botões do menu de navegação */
 .menu-navegacao, nav {
     display: flex;
     justify-content: center;
@@ -95,7 +100,7 @@ header hr:last-of-type, .cabecalho hr:last-of-type {
     padding: 8px 0;
 }
 
-/* Estilo dos links do menu de navegação */
+/* Estilo individual dos links do menu */
 .menu-navegacao a, nav a {
     text-decoration: none;
     color: #222222;
@@ -108,7 +113,7 @@ header hr:last-of-type, .cabecalho hr:last-of-type {
     font-family: system-ui, -apple-system, sans-serif;
 }
 
-/* Cor do link ao passar o cursor do rato */
+/* Efeito ao passar o cursor do rato por cima dos links */
 .menu-navegacao a:hover, nav a:hover {
     background-color: #eee3ce;
 }
@@ -119,7 +124,7 @@ header hr:last-of-type, .cabecalho hr:last-of-type {
     color: #ffffff;
 }
 
-/* Etiqueta vermelha acima do título da matéria */
+/* Etiqueta pequena em tom vermelho acima do título da matéria */
 .dossie-tag {
     font-size: 0.7rem;
     color: #7a2818;
@@ -158,7 +163,7 @@ p {
     text-align: justify;
 }
 
-/* Disposição dos cartões de personagens */
+/* Disposição dos cartões das personagens */
 .grade-personagens {
     display: flex;
     gap: 16px;
@@ -213,13 +218,14 @@ p {
     text-align: left;
 }
 
-/* Caixa com barra lateral para os resumos */
+/* Caixa com barra lateral vermelha para os resumos */
 .bloco-resumo {
     background-color: #e8ddc7;
     padding: 16px;
     border-radius: 3px;
     border-left: 4px solid #7a2818;
     margin: 22px 0;
+    clear: both;
 }
 
 /* Texto interno da caixa de resumo */
@@ -231,16 +237,17 @@ p {
     text-align: left;
 }
 
-/* Caixa de créditos dos alunos */
+/* Caixa com barra lateral para os créditos dos alunos */
 .bloco-creditos {
-    margin-top: 15px;
+    margin-top: 20px;
     background-color: #f1e7d0;
     border-left: 3px solid #555555;
     padding: 16px;
     border-radius: 3px;
+    clear: both;
 }
 
-/* Texto da caixa de créditos */
+/* Texto interno da caixa de créditos */
 .bloco-creditos p {
     font-size: 0.88rem;
     line-height: 1.6;
@@ -249,7 +256,7 @@ p {
     text-align: left;
 }
 
-/* Espaçamento do bloco de matéria com imagem */
+/* Margem do bloco de matéria com imagem */
 .materia-com-imagem-lado {
     margin-top: 20px;
 }
@@ -329,13 +336,13 @@ p {
     transition: background 0.2s ease, transform 0.2s ease;
 }
 
-/* Alteração de cor no botão do YouTube ao passar o cursor */
+/* Alteração de cor do botão do YouTube ao passar o cursor */
 .btn-youtube-filme:hover {
     background-color: #e74c3c;
     transform: translateY(-2px);
 }
 
-/* Posição do rodapé */
+/* Espaçamento do rodapé */
 .rodape-materia, footer {
     margin-top: 35px;
 }
@@ -352,7 +359,7 @@ p {
     font-family: system-ui, -apple-system, sans-serif;
 }
 
-/* Posicionamento dos botões no rodapé */
+/* Posicionamento dos botões de navegação no rodapé */
 .botoes-navegacao {
     display: flex;
     justify-content: space-between;
@@ -380,8 +387,14 @@ p {
     border-color: #7a2818;
 }
 
-/* Ajustes de responsividade para ecrãs de telemóvel */
+/* Regras de adaptação automática para ecrãs de telemóvel */
 @media (max-width: 600px) {
+    /* Desativa a centralização vertical no telemóvel para permitir o scroll natural */
+    body {
+        padding: 20px 12px;
+        justify-content: flex-start;
+    }
+
     /* Alinhamento do topo em coluna */
     .subtitulo-topo {
         flex-direction: column;
@@ -398,7 +411,7 @@ p {
         font-size: 1.4rem;
     }
 
-    /* Organização da imagem e texto em ordem vertical */
+    /* Organização da imagem e do texto em ordem vertical */
     .materia-com-imagem-lado {
         display: flex;
         flex-direction: column;
@@ -411,18 +424,18 @@ p {
         margin: 0 0 16px 0;
     }
 
-    /* Ajuste da altura máxima das imagens para não ocuparem o ecrã inteiro */
+    /* Ajuste da altura máxima das imagens no telemóvel */
     .imagem-lado img, img {
         max-height: 240px;
         margin: 10px auto;
     }
 
-    /* Cartões de personagens empilhados na vertical */
+    /* Cartões das personagens empilhados na vertical */
     .grade-personagens {
         flex-direction: column;
     }
 
-    /* Alinhamento à esquerda para evitar espaçamentos no texto */
+    /* Alinhamento do texto à esquerda para evitar espaçamentos no telemóvel */
     p {
         text-align: left;
     }
