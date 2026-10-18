@@ -1,42 +1,38 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,400&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&display=swap');
+@@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,400&family=Lora:ital,wght@0,400;0,500;1,400&display=swap');
 
-/* Configurações do corpo da página com centralização vertical na ecrã */
+/* Configurações do corpo da página em papel antigo e texto em tom natural */
 body {
-    background-color: #faf6ee;
-    color: #242424;
-    font-family: 'Merriweather', 'Georgia', serif;
-    font-weight: 300;
-    padding: 40px 14px;
+    background-color: #f7f3eb;
+    color: #1a1a1a;
+    font-family: 'Lora', Georgia, serif;
+    font-weight: 400;
+    padding: 24px 14px;
     line-height: 1.8;
     -webkit-font-smoothing: antialiased;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    min-height: 100vh;
 }
 
-/* Zerar margens e espaçamentos padrão de todos os elementos */
+/* Reset de margens e caixas */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Estilo padrão de exibição de imagens */
+/* Moldura e exibição de imagens */
 img {
     max-width: 100%;
     max-height: 450px;
     height: auto;
     display: block;
     margin: 22px auto;
-    border: 1px solid #dcd1be;
+    border: 1px solid #dcd3c5;
     border-radius: 2px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
     object-fit: contain;
-    background-color: #f3ebd9;
+    background-color: #efe8db;
 }
 
-/* Container principal centralizado na largura máxima */
+/* Contentor principal do site */
 .cabecalho,
 .conteudo,
 .rodape-materia,
@@ -48,50 +44,51 @@ footer {
     width: 100%;
 }
 
-/* Alinhamento e margem inferior do cabeçalho */
+/* Alinhamento superior do cabeçalho */
 .cabecalho, header {
     margin-bottom: 24px;
     text-align: center;
 }
 
-/* Texto de data e local no topo do jornal */
+/* Texto de topo com data e local */
 .subtitulo-topo {
     display: flex;
     justify-content: space-between;
-    font-size: 0.7rem;
+    font-size: 0.72rem;
     font-weight: 700;
     letter-spacing: 1.5px;
     margin-bottom: 6px;
-    color: #555555;
+    color: #4a4a4a;
     text-transform: uppercase;
     font-family: system-ui, -apple-system, sans-serif;
 }
 
-/* Título principal "Gazeta Literária" */
+/* Título GAZETA LITERÁRIA em fonte editorial natural, fluida e marcante */
 .titulo-jornal, h1 {
-    font-size: 3.2rem;
-    font-family: 'Playfair Display', 'Times New Roman', serif;
-    font-weight: 900;
-    letter-spacing: 1px;
-    margin: 8px 0;
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 3.8rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin: 4px 0 8px 0;
     text-align: center;
-    color: #121212;
+    color: #0d0d0d;
+    line-height: 1.1;
     text-transform: uppercase;
 }
 
-/* Linha preta simples de separação */
+/* Linha divisória simples */
 .linha-jornal, hr {
     border: 0;
-    border-top: 1px solid #222222;
+    border-top: 1px solid #111111;
     margin: 6px 0;
 }
 
-/* Linha preta dupla posicionada abaixo do menu */
+/* Linha dupla sob a navegação */
 header hr:last-of-type, .cabecalho hr:last-of-type {
-    border-top: 3px double #1a1a1a;
+    border-top: 3px double #111111;
 }
 
-/* Organização dos botões do menu de navegação */
+/* Disposição dos botões de navegação */
 .menu-navegacao, nav {
     display: flex;
     justify-content: center;
@@ -100,70 +97,71 @@ header hr:last-of-type, .cabecalho hr:last-of-type {
     padding: 8px 0;
 }
 
-/* Estilo individual dos links do menu */
+/* Estilo dos botões do menu */
 .menu-navegacao a, nav a {
     text-decoration: none;
-    color: #222222;
-    font-size: 0.72rem;
+    color: #111111;
+    font-size: 0.75rem;
     font-weight: 700;
     letter-spacing: 0.5px;
-    padding: 5px 11px;
+    padding: 6px 12px;
     border-radius: 12px;
     transition: all 0.2s ease;
     font-family: system-ui, -apple-system, sans-serif;
 }
 
-/* Efeito ao passar o cursor do rato por cima dos links */
+/* Efeito hover nos botões do menu */
 .menu-navegacao a:hover, nav a:hover {
-    background-color: #eee3ce;
+    background-color: #e8dfd1;
+    color: #000000;
 }
 
-/* Destaque para a página que está aberta no momento */
+/* Aba ativa destacada em tom vinho */
 .menu-navegacao a.ativo, nav a.ativo {
     background-color: #7a2818;
     color: #ffffff;
 }
 
-/* Etiqueta pequena em tom vermelho acima do título da matéria */
+/* Etiqueta acima do título da matéria */
 .dossie-tag {
-    font-size: 0.7rem;
+    font-size: 0.72rem;
     color: #7a2818;
-    font-weight: 700;
+    font-weight: 800;
     letter-spacing: 1.2px;
     margin-top: 20px;
     text-transform: uppercase;
     font-family: system-ui, -apple-system, sans-serif;
 }
 
-/* Título de cada matéria */
+/* Título das matérias bonito, elegante e natural */
 .titulo-materia, h2 {
-    font-size: 2rem;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 2.3rem;
     font-weight: 700;
-    line-height: 1.3;
-    margin: 6px 0 8px 0;
-    color: #121212;
+    line-height: 1.25;
+    margin: 6px 0 10px 0;
+    color: #0d0d0d;
 }
 
-/* Subtítulo em itálico */
+/* Subtítulo em itálico natural */
 .subtitulo-materia {
     font-style: italic;
-    font-size: 0.98rem;
-    color: #555555;
+    font-size: 1.05rem;
+    color: #444444;
     margin-bottom: 22px;
-    line-height: 1.45;
+    line-height: 1.5;
 }
 
-/* Estilo padrão dos parágrafos de texto */
+/* Parágrafos do texto principal */
 p {
-    font-size: 0.94rem;
-    line-height: 1.8;
-    color: #2c2c2c;
+    font-size: 0.96rem;
+    line-height: 1.85;
+    color: #222222;
     margin-bottom: 16px;
     text-align: justify;
 }
 
-/* Disposição dos cartões das personagens */
+/* Disposição dos cartões de personagens */
 .grade-personagens {
     display: flex;
     gap: 16px;
@@ -171,112 +169,112 @@ p {
     margin: 22px 0;
 }
 
-/* Estrutura do cartão individual da personagem */
+/* Cartão do personagem */
 .cartao-personagem {
     flex: 1;
-    background-color: #f2e9d8;
-    padding: 12px;
+    background-color: #ede5d8;
+    padding: 14px;
     border-radius: 3px;
-    border: 1px solid #dfd4c1;
+    border: 1px solid #dcd1c0;
 }
 
-/* Foto da personagem dentro do cartão */
+/* Foto da personagem no cartão */
 .cartao-personagem img {
     width: 100%;
     height: 180px;
     object-fit: cover;
     border-radius: 2px;
     margin: 0 0 10px 0;
-    border: 1px solid #d0c5b0;
+    border: 1px solid #d0c2b0;
 }
 
-/* Numeração da personagem no cartão */
+/* Número da personagem */
 .numero {
     color: #7a2818;
-    font-weight: 700;
+    font-weight: 800;
     font-size: 0.85rem;
     display: block;
-    margin-bottom: 3px;
+    margin-bottom: 4px;
     font-family: system-ui, -apple-system, sans-serif;
 }
 
 /* Nome da personagem */
 .cartao-personagem h3 {
-    font-size: 1.05rem;
-    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    font-family: 'Cormorant Garamond', Georgia, serif;
     font-weight: 700;
     margin-bottom: 6px;
-    color: #121212;
+    color: #0d0d0d;
 }
 
-/* Descrição da personagem */
+/* Descrição do personagem */
 .cartao-personagem p {
-    font-size: 0.84rem;
-    line-height: 1.5;
-    color: #333333;
+    font-size: 0.86rem;
+    line-height: 1.55;
+    color: #2c2c2c;
     margin-bottom: 8px;
     text-align: left;
 }
 
-/* Caixa com barra lateral vermelha para os resumos */
+/* Caixa de resumo */
 .bloco-resumo {
-    background-color: #e8ddc7;
-    padding: 16px;
+    background-color: #e6dcce;
+    padding: 18px;
     border-radius: 3px;
-    border-left: 4px solid #7a2818;
+    border-left: 5px solid #7a2818;
     margin: 22px 0;
     clear: both;
 }
 
-/* Texto interno da caixa de resumo */
+/* Texto dentro do bloco de resumo */
 .bloco-resumo p {
-    font-size: 0.88rem;
-    line-height: 1.6;
-    color: #222222;
+    font-size: 0.9rem;
+    line-height: 1.65;
+    color: #1a1a1a;
     margin: 0;
     text-align: left;
 }
 
-/* Caixa com barra lateral para os créditos dos alunos */
+/* Caixa de créditos */
 .bloco-creditos {
     margin-top: 20px;
-    background-color: #f1e7d0;
-    border-left: 3px solid #555555;
+    background-color: #eae1d3;
+    border-left: 4px solid #4a4a4a;
     padding: 16px;
     border-radius: 3px;
     clear: both;
 }
 
-/* Texto interno da caixa de créditos */
+/* Texto dos créditos */
 .bloco-creditos p {
-    font-size: 0.88rem;
+    font-size: 0.9rem;
     line-height: 1.6;
-    color: #222222;
+    color: #1a1a1a;
     margin: 0;
     text-align: left;
 }
 
-/* Margem do bloco de matéria com imagem */
+/* Estrutura com imagem ao lado do texto */
 .materia-com-imagem-lado {
     margin-top: 20px;
 }
 
-/* Limpeza de elementos flutuantes para não quebrar o layout */
+/* Limpeza do fluxo da imagem flutuante */
 .materia-com-imagem-lado::after {
     content: "";
     display: table;
     clear: both;
 }
 
-/* Caixilho para a imagem flutuar à esquerda no computador */
+/* Moldura da imagem flutuante */
 .imagem-lado {
     float: left;
     width: 260px;
     margin: 0 20px 15px 0;
     text-align: center;
-    background-color: #f3ebd9;
+    background-color: #efe8db;
     padding: 8px;
-    border: 1px solid #dcd1be;
+    border: 1px solid #dcd3c5;
     border-radius: 3px;
 }
 
@@ -300,22 +298,22 @@ p {
     font-family: system-ui, -apple-system, sans-serif;
 }
 
-/* Caixa em tom escuro para o link do filme */
+/* Bloco escuro para o destaque do filme */
 .bloco-link-filme {
-    background-color: #4a150b;
-    border-left: 5px solid #2b0b06;
+    background-color: #42140a;
+    border-left: 5px solid #240a04;
     padding: 22px;
     border-radius: 4px;
     text-align: center;
     margin-top: 30px;
-    color: #faf6ee;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    color: #f7f3eb;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
 }
 
-/* Texto dentro da caixa do filme */
+/* Texto do bloco do filme */
 .bloco-link-filme p {
     font-size: 0.95rem;
-    color: #f1e7d0;
+    color: #f7f3eb;
     margin-bottom: 15px;
     text-align: center;
 }
@@ -323,7 +321,7 @@ p {
 /* Botão do YouTube */
 .btn-youtube-filme {
     display: inline-block;
-    background-color: #c0392b;
+    background-color: #b82d1d;
     color: #ffffff !important;
     text-decoration: none;
     font-family: system-ui, -apple-system, sans-serif;
@@ -336,106 +334,97 @@ p {
     transition: background 0.2s ease, transform 0.2s ease;
 }
 
-/* Alteração de cor do botão do YouTube ao passar o cursor */
+/* Efeito ao passar o cursor no botão do YouTube */
 .btn-youtube-filme:hover {
-    background-color: #e74c3c;
+    background-color: #d63624;
     transform: translateY(-2px);
 }
 
-/* Espaçamento do rodapé */
+/* Rodapé */
 .rodape-materia, footer {
     margin-top: 35px;
 }
 
 /* Assinatura no rodapé */
 .rodape-texto {
-    font-size: 0.68rem;
+    font-size: 0.7rem;
     text-align: center;
     font-weight: 700;
     letter-spacing: 1px;
     margin: 10px 0;
-    color: #555555;
+    color: #4a4a4a;
     text-transform: uppercase;
     font-family: system-ui, -apple-system, sans-serif;
 }
 
-/* Posicionamento dos botões de navegação no rodapé */
+/* Botões de navegação do rodapé */
 .botoes-navegacao {
     display: flex;
     justify-content: space-between;
     margin-top: 15px;
 }
 
-/* Botões de navegação para a página anterior/seguinte */
+/* Estilo dos botões do rodapé */
 .btn-nav, a.btn-nav {
-    background-color: #e8ddc7;
-    color: #121212;
+    background-color: #e6dcce;
+    color: #111111;
     text-decoration: none;
     padding: 8px 14px;
-    font-size: 0.72rem;
+    font-size: 0.75rem;
     font-weight: 700;
     border-radius: 12px;
-    border: 1px solid #d6cbba;
+    border: 1px solid #d2c5b3;
     transition: all 0.2s ease;
     font-family: system-ui, -apple-system, sans-serif;
 }
 
-/* Efeito nos botões do rodapé ao passar o cursor */
+/* Efeito hover nos botões do rodapé */
 .btn-nav:hover, a.btn-nav:hover {
     background-color: #7a2818;
     color: #ffffff;
     border-color: #7a2818;
 }
 
-/* Regras de adaptação automática para ecrãs de telemóvel */
+/* Ajustes automáticos para ecrãs de telemóvel */
 @media (max-width: 600px) {
-    /* Desativa a centralização vertical no telemóvel para permitir o scroll natural */
     body {
         padding: 20px 12px;
-        justify-content: flex-start;
     }
 
-    /* Alinhamento do topo em coluna */
     .subtitulo-topo {
         flex-direction: column;
         text-align: center;
         gap: 2px;
     }
 
-    /* Redução do tamanho dos títulos no telemóvel */
     .titulo-jornal, h1 {
-        font-size: 2rem;
+        font-size: 2.6rem;
     }
 
     .titulo-materia, h2 {
-        font-size: 1.4rem;
+        font-size: 1.6rem;
     }
 
-    /* Organização da imagem e do texto em ordem vertical */
     .materia-com-imagem-lado {
         display: flex;
         flex-direction: column;
     }
 
-    /* Cancelamento da flutuação da imagem no telemóvel */
     .imagem-lado {
         float: none;
         width: 100%;
         margin: 0 0 16px 0;
     }
 
-    /* Ajuste da altura máxima das imagens no telemóvel */
     .imagem-lado img, img {
-        max-height: 240px;
+        max-height: 250px;
         margin: 10px auto;
     }
 
-    /* Cartões das personagens empilhados na vertical */
     .grade-personagens {
         flex-direction: column;
     }
 
-    /* Alinhamento do texto à esquerda para evitar espaçamentos no telemóvel */
     p {
         text-align: left;
     }
