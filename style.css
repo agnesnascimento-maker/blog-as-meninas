@@ -107,18 +107,18 @@ header hr:last-of-type, .cabecalho hr:last-of-type {
 }
 
 .menu-navegacao a:hover, nav a:hover {
-    background-color: #eee3ce;
+    background-color: #e2ebe0;
 }
 
 .menu-navegacao a.ativo, nav a.ativo {
-    background-color: #8B4513;
-    color: #ffffff;
+    background-color: #2d5a3f !important;
+    color: #ffffff !important;
 }
 
 /* Matérias e Textos */
 .dossie-tag {
     font-size: 0.7rem;
-    color: #8B4513;
+    color: #2d5a3f !important;
     font-weight: 700;
     letter-spacing: 1.2px;
     margin-top: 20px;
@@ -177,7 +177,7 @@ p {
 }
 
 .numero {
-    color: #8B4513;
+    color: #2d5a3f !important;
     font-weight: 700;
     font-size: 0.85rem;
     display: block;
@@ -201,12 +201,12 @@ p {
     text-align: left;
 }
 
-/* Blocos de Destaque / Resumo (Marrom Terracota) */
+/* Blocos de Destaque / Resumo (Verde Claro Vintage) */
 .bloco-resumo {
-    background-color: #f3ebd9 !important;
+    background-color: #e8f0e6 !important;
     padding: 16px;
     border-radius: 4px;
-    border-left: 5px solid #8B4513 !important;
+    border-left: 5px solid #2d5a3f !important;
     margin: 22px 0;
     clear: both;
 }
@@ -214,24 +214,24 @@ p {
 .bloco-resumo p {
     font-size: 0.88rem;
     line-height: 1.6;
-    color: #222222;
+    color: #1c3626;
     margin: 0;
     text-align: left;
 }
 
-/* Bloco de Perguntas/Reflexão (Marrom Terracota) */
+/* Bloco de Perguntas/Reflexão (Verde Claro Vintage) */
 .bloco-reflexao {
-    background-color: #f3ebd9 !important;
+    background-color: #e8f0e6 !important;
     padding: 18px;
     border-radius: 4px;
-    border-left: 5px solid #8B4513 !important;
+    border-left: 5px solid #2d5a3f !important;
     margin: 25px 0;
     clear: both;
 }
 
 .bloco-reflexao p {
     font-size: 0.95rem;
-    color: #8B4513 !important;
+    color: #2d5a3f !important;
     margin-bottom: 10px;
     font-weight: 700;
     text-align: left;
@@ -298,10 +298,10 @@ p {
     font-family: system-ui, -apple-system, sans-serif;
 }
 
-/* Bloco Botão Filme (Marrom e Creme) */
+/* Bloco Botão Filme (Verde Claro Suave) */
 .bloco-link-filme {
-    background-color: #f3ebd9 !important;
-    border-left: 5px solid #8B4513 !important;
+    background-color: #e8f0e6 !important;
+    border-left: 5px solid #2d5a3f !important;
     padding: 22px;
     border-radius: 4px;
     text-align: center;
@@ -312,14 +312,14 @@ p {
 
 .bloco-link-filme p {
     font-size: 0.95rem;
-    color: #8B4513 !important;
+    color: #2d5a3f !important;
     margin-bottom: 12px;
     text-align: center;
 }
 
 .btn-youtube-filme {
     display: inline-block;
-    background-color: #8B4513 !important;
+    background-color: #2d5a3f !important;
     color: #ffffff !important;
     text-decoration: none;
     font-family: system-ui, -apple-system, sans-serif;
@@ -333,7 +333,7 @@ p {
 }
 
 .btn-youtube-filme:hover {
-    background-color: #a0522d !important;
+    background-color: #1e3d2a !important;
     transform: translateY(-2px);
 }
 
@@ -375,9 +375,9 @@ p {
 }
 
 .btn-nav:hover, a.btn-nav:hover {
-    background-color: #8B4513;
-    color: #ffffff;
-    border-color: #8B4513;
+    background-color: #2d5a3f !important;
+    color: #ffffff !important;
+    border-color: #2d5a3f !important;
 }
 
 /* Adaptação telemóveis */
