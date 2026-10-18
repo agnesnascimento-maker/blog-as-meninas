@@ -1,11 +1,14 @@
+/* "Importação das fontes do Google para o estilo de jornal" */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,400&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&display=swap');
 
+/* "Reset de margens e espaçamentos padrão" */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* "Estilização geral do corpo da página" */
 body {
     background-color: #faf6ee;
     color: #242424;
@@ -16,7 +19,7 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-/* Formatador e moldura das fotos */
+/* "Estilo e moldura padrão das imagens do site" */
 img {
     max-width: 100%;
     max-height: 450px;
@@ -30,6 +33,7 @@ img {
     background-color: #f3ebd9;
 }
 
+/* "Centralização do conteúdo principal" */
 .cabecalho,
 .conteudo,
 .rodape-materia,
@@ -40,12 +44,13 @@ footer {
     margin: 0 auto;
 }
 
-/* Cabeçalho do Jornal */
+/* "Estrutura do cabeçalho principal" */
 .cabecalho, header {
     margin-bottom: 24px;
     text-align: center;
 }
 
+/* "Subtítulo do topo com data e caderno" */
 .subtitulo-topo {
     display: flex;
     justify-content: space-between;
@@ -58,6 +63,7 @@ footer {
     font-family: system-ui, -apple-system, sans-serif;
 }
 
+/* "Título principal estilo jornal" */
 .titulo-jornal, h1 {
     font-size: 3.2rem;
     font-family: 'Playfair Display', 'Times New Roman', serif;
@@ -69,6 +75,7 @@ footer {
     text-transform: uppercase;
 }
 
+/* "Linhas divisórias do jornal" */
 .linha-jornal, hr {
     border: 0;
     border-top: 1px solid #222222;
@@ -79,7 +86,7 @@ header hr:last-of-type, .cabecalho hr:last-of-type {
     border-top: 3px double #1a1a1a;
 }
 
-/* Menu de Navegação */
+/* "Menu de navegação principal" */
 .menu-navegacao, nav {
     display: flex;
     justify-content: center;
@@ -109,7 +116,7 @@ header hr:last-of-type, .cabecalho hr:last-of-type {
     color: #ffffff;
 }
 
-/* Matérias e Títulos */
+/* "Tag e títulos das matérias" */
 .dossie-tag {
     font-size: 0.7rem;
     color: #7a2818;
@@ -137,6 +144,7 @@ header hr:last-of-type, .cabecalho hr:last-of-type {
     line-height: 1.45;
 }
 
+/* "Formatatação dos parágrafos" */
 p {
     font-size: 0.94rem;
     line-height: 1.8;
@@ -145,7 +153,7 @@ p {
     text-align: justify;
 }
 
-/* Cartões das Personagens */
+/* "Cartões das personagens" */
 .grade-personagens {
     display: flex;
     gap: 16px;
@@ -195,7 +203,7 @@ p {
     text-align: left;
 }
 
-/* Caixa de Destaque / Resumo */
+/* "Caixas de resumo e destaque" */
 .bloco-resumo {
     background-color: #e8ddc7;
     padding: 16px;
@@ -212,25 +220,43 @@ p {
     text-align: left;
 }
 
-/* Botão para assistir ao filme no YouTube */
-.btn-assistir-filme {
+/* "Bloco e botão do filme do YouTube" */
+.bloco-link-filme {
+    background-color: #e8deca;
+    border-left: 5px solid #7a2818;
+    padding: 20px;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.bloco-link-filme p {
+    font-size: 0.95rem;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.btn-youtube-filme {
     display: inline-block;
-    background-color: #7a2818;
+    background-color: #bb0000;
     color: #ffffff !important;
     text-decoration: none;
-    font-weight: bold;
-    padding: 12px 20px;
-    border-radius: 4px;
-    margin-top: 10px;
     font-family: system-ui, -apple-system, sans-serif;
+    font-weight: bold;
     font-size: 0.85rem;
+    padding: 12px 22px;
+    border-radius: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
     transition: background 0.2s ease;
 }
 
-.btn-assistir-filme:hover {
-    background-color: #581c10;
+.btn-youtube-filme:hover {
+    background-color: #e60000;
 }
 
+/* "Rodapé e botões de navegação" */
 .rodape-materia, footer {
     margin-top: 35px;
 }
@@ -271,6 +297,7 @@ p {
     border-color: #7a2818;
 }
 
+/* "Ajustes responsivos para telas de celular" */
 @media (max-width: 600px) {
     .grade-personagens {
         flex-direction: column;
