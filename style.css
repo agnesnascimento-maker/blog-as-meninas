@@ -206,8 +206,30 @@ p {
     text-align: left;
 }
 
+.bloco-creditos {
+    margin-top: 15px;
+    background-color: #f1e7d0;
+    border-left: 3px solid #555555;
+    padding: 16px;
+    border-radius: 3px;
+}
+
+.bloco-creditos p {
+    font-size: 0.88rem;
+    line-height: 1.6;
+    color: #222222;
+    margin: 0;
+    text-align: left;
+}
+
 .materia-com-imagem-lado {
     margin-top: 20px;
+}
+
+.materia-com-imagem-lado::after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 .imagem-lado {
